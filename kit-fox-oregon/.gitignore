@@ -1,0 +1,9 @@
+app/index.html
+data/raw/
+data/env/
+data/model_data.rds
+models/
+outputs/*.tif
+.Rhistory
+.RData
+.Rproj.user/

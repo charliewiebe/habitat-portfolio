@@ -1,0 +1,716 @@
+id,observed_on,lon,lat,pos_acc,taxon,in_oregon_place,url
+35050,2010-07-20,-108.2427978516,30.8562582051,,Vulpes macrotis macrotis,FALSE,http://www.inaturalist.org/observations/35050
+153247,2012-11-21,-116.161111,32.975889,,Vulpes macrotis macrotis,FALSE,http://www.inaturalist.org/observations/153247
+190175,2011-12-26,-116.2971496582,33.0967188365,1318,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/190175
+284215,2005-08-15,-108.436571,30.902193,56,Vulpes macrotis macrotis,FALSE,http://conabio.inaturalist.org/observations/284215
+301297,2008-11-12,-113.476448,31.543636,100,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/301297
+445794,2009-09-20,-114.759302,31.987016,,Vulpes macrotis macrotis,FALSE,http://conabio.inaturalist.org/observations/445794
+478484,2013-11-28,-113.464093,31.539576,226,Vulpes macrotis macrotis,FALSE,http://www.inaturalist.org/observations/478484
+914094,2014-10-08,-113.4456783333,32.8244583333,,Vulpes macrotis macrotis,FALSE,http://www.inaturalist.org/observations/914094
+1046448,2014-10-24,-115.937611,32.709226,312,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/1046448
+1163794,2012-11-22,-108.447505,30.842665,,Vulpes macrotis macrotis,FALSE,http://conabio.inaturalist.org/observations/1163794
+1354308,2012-08-23,-110.815473,32.157435,112,Vulpes macrotis macrotis,FALSE,http://www.inaturalist.org/observations/1354308
+1557551,2015-05-28,-114.958245,34.8483,,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/1557551
+1876094,2015-08-11,-103.298264,25.08933,,Vulpes macrotis,FALSE,http://conabio.inaturalist.org/observations/1876094
+1947475,2015-09-09,-113.003875,31.9392616667,,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/1947475
+2344093,2015-10-29,-103.529098,29.1411,79,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/2344093
+2455920,2005-08-12,-116.544632,34.373307,54,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/2455920
+2582494,2014-08-31,-113.048498,33.022902,13,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/2582494
+2832891,2015-06-16,-115.364857,34.420314,33,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/2832891
+3059023,2016-04-29,-115.0293612,36.0836049,1000,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/3059023
+3169241,2016-05-13,-115.34408594,35.63989478,9,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/3169241
+3444431,2016-06-09,-114.7638649016,36.1785174216,64,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/3444431
+3531235,2007-12-30,-116.216816,32.98473,203,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/3531235
+3839665,2016-07-19,-115.7184811148,32.716200368,94,Vulpes macrotis macrotis,FALSE,http://www.inaturalist.org/observations/3839665
+3958104,2012-05-09,-114.8629188538,33.5721508562,1215,Vulpes macrotis macrotis,FALSE,http://www.inaturalist.org/observations/3958104
+4124299,2016-09-14,-114.43693777,32.5108026999,,Vulpes macrotis macrotis,FALSE,http://www.inaturalist.org/observations/4124299
+4218754,2016-03-18,-113.357620866,31.9288545654,1181,Vulpes macrotis,FALSE,http://conabio.inaturalist.org/observations/4218754
+4254360,2016-10-02,-107.9741283333,32.587945,,Vulpes macrotis macrotis,FALSE,http://www.inaturalist.org/observations/4254360
+4409597,2002-10-17,-111.6884708405,24.6872422593,122,Vulpes macrotis,FALSE,http://conabio.inaturalist.org/observations/4409597
+4517942,2004-08-19,-117.1613788605,34.6074769971,1000,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/4517942
+4618935,2016-11-22,-112.273235317,41.0401964766,395,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/4618935
+4645523,2011-07-02,-113.8852351504,35.0973369875,59,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/4645523
+4734228,2016-12-07,-114.63048,34.54047,10,Vulpes macrotis,FALSE,http://www.inaturalist.org/observations/4734228
+4996882,2014-06-09,-109.737968752,38.480738511,1954,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/4996882
+5006728,2017-01-18,-104.2356638889,31.8526972222,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/5006728
+5098932,2013-04-26,-112.712688446,40.1771682763,1207,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/5098932
+5399193,2017-03-19,-117.4230105804,34.6106038196,5,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/5399193
+5496192,2006-10-19,-108.4968566895,30.8161668603,1953,Vulpes macrotis,FALSE,http://conabio.inaturalist.org/observations/5496192
+5542613,2017-01-10,-103.58197,29.9396616667,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/5542613
+5575626,2016-03-20,-117.3342616667,35.951095,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/5575626
+6664554,2017-06-14,-112.913747,40.885746,246,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/6664554
+6980932,2017-07-08,-100.7310183333,24.90288,,Vulpes macrotis macrotis,FALSE,http://conabio.inaturalist.org/observations/6980932
+7161252,2017-07-12,-112.845636,40.001496,10,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/7161252
+7248241,2017-07-28,-115.7952804565,33.8624992371,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/7248241
+7396441,2017-08-07,-109.5055166667,38.7334283333,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/7396441
+7431561,2017-07-25,-114.232815,38.9884233333,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/7431561
+8221354,2017-10-02,-115.2853821964,35.4920087988,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/8221354
+8293972,2016-05-24,-115.034336484,36.24518957,516,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/8293972
+8371308,2017-10-11,-111.3319866667,29.376525,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/8371308
+9342134,2016-07-19,-100.7260894775,24.8689165765,217,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/9342134
+9478569,2018-01-14,-115.8319654069,33.9080549388,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/9478569
+9524622,2018-01-18,-115.963534657,33.2187182643,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/9524622
+9524931,2018-01-18,-115.9682063108,33.217440024,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/9524931
+9711916,2018-02-02,-105.0074100494,31.7523007917,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/9711916
+9860370,2018-01-07,-114.8402380943,32.9505952671,61,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/9860370
+10066920,2016-06-18,-113.6102600098,41.4966239929,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/10066920
+10469507,2018-02-22,-116.0002613068,33.6221241641,1036,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/10469507
+10619008,2018-03-30,-112.8113937378,31.9389796955,61,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/10619008
+11863062,2018-04-30,-115.6666352498,36.57600958,200,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/11863062
+12202403,2018-04-19,-114.28456043,32.33649318,5,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/12202403
+12234147,2018-04-25,-112.9710320845,31.1206748191,906,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/12234147
+12241651,2013-06-30,-112.0277810097,28.8621707595,31,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/12241651
+12754530,2018-05-23,-117.18664589,35.04873173,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/12754530
+13008328,2018-05-25,-118.37911685,34.81950492,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/13008328
+13639207,2018-06-21,-118.2730152421,34.7327602135,982,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/13639207
+14970543,2010-08-08,-113.953260166,32.6944597085,61,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/14970543
+15502309,2018-08-15,-117.79081635,34.70324235,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/15502309
+15968649,2018-08-27,-116.469095,35.0316666667,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/15968649
+18548279,2018-11-21,-115.7574107498,33.6769354013,263,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/18548279
+18669285,2017-02-26,-114.1227075924,31.5214065152,684,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/18669285
+18886116,2018-12-07,-117.1565945,36.60577,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/18886116
+18953112,2018-12-10,-114.97898,36.0871305,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/18953112
+18982243,2018-12-12,-117.0200012998,35.0231138617,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/18982243
+19029278,2018-12-14,-106.238975,32.7940616667,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/19029278
+19310525,2015-11-15,-116.2991836022,33.1360682169,445,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/19310525
+19310633,2015-12-03,-116.1067351216,33.158009742,480,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/19310633
+19310822,2016-01-28,-116.1069926136,33.1571115564,848,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/19310822
+19311040,2016-03-10,-116.112142455,33.1559977935,500,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/19311040
+19513398,2019-01-07,-112.6890334893,29.9257322579,1614,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/19513398
+19513870,2019-01-08,-112.6594019531,29.91085355,200,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/19513870
+19582139,2019-01-09,-117.4121166667,37.0147472167,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/19582139
+19794868,2019-01-21,-117.6424394175,35.5795261428,17,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/19794868
+19916861,2019-01-27,-110.8077302948,32.0823296875,33,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/19916861
+20240559,2019-02-09,-116.29367142,33.2574925293,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/20240559
+20548387,2019-02-18,-116.2914361111,33.2582666667,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/20548387
+20851751,2019-02-28,-115.9650421143,33.2186470032,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/20851751
+21163895,2019-03-09,-116.2897809596,33.2581595611,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/21163895
+21982362,2019-03-30,-116.2917226437,33.2565252437,126,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/21982362
+22173585,2019-04-03,-112.7397195,32.2655355,1825,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/22173585
+22360113,2019-04-09,-116.2919155789,33.2564794505,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/22360113
+24748981,2017-06-20,-106.4447777,31.2357222,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/24748981
+24748990,2017-01-10,-106.4430277,31.2708888,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/24748990
+27959371,2019-06-30,-114.06433959,27.36435414,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/27959371
+29405206,2019-07-23,-114.8642116667,34.0489083333,7,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/29405206
+30076970,2019-08-02,-109.8307732467,32.0631715355,1067,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/30076970
+30782560,2016-10-11,-113.98299457,32.45662494,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/30782560
+31032719,2005-05-19,-108.4788500932,30.8352321097,14,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/31032719
+31071261,2006-02-26,-108.4834957761,30.8470588291,1,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/31071261
+32091618,2019-09-01,-116.2933535942,33.2585860461,415,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/32091618
+32869753,2019-09-16,-103.7934112549,30.8876724243,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/32869753
+33176862,2019-08-28,-108.3341666667,31.1455555556,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/33176862
+34101084,2019-10-06,-116.6680555556,35.2575,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/34101084
+34232618,2019-10-02,-115.54107,35.6690533333,6,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/34232618
+34761405,2019-10-22,-104.8362197355,31.3801527489,5,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/34761405
+35436298,2019-11-07,-116.245006,32.908208,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/35436298
+35536183,2019-11-10,-115.6536102295,36.2642211914,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/35536183
+35667674,2019-11-14,-116.6088783333,34.8131783333,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/35667674
+35684806,2019-11-14,-116.2927880853,33.2554459191,13,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/35684806
+36042781,2019-11-24,-115.2224212441,31.0562575966,12,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/36042781
+36042839,2019-11-24,-115.2224247272,31.0562515863,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/36042839
+36042857,2019-11-24,-115.2225200699,31.0562250632,24,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/36042857
+36042894,2019-11-24,-115.2225148005,31.0562696151,6,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/36042894
+36042975,2019-11-24,-115.2225237706,31.0562618585,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/36042975
+36420469,2019-12-06,-116.0998295884,33.1757390292,21,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/36420469
+36509782,2019-12-07,-115.7006022541,34.9167857426,9,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/36509782
+36609006,2019-12-12,-115.9671568125,33.2157526869,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/36609006
+37133445,2019-12-28,-117.11376117,36.61332,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/37133445
+37635468,2020-01-14,-116.1004245233,33.1742304329,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/37635468
+37635544,2020-01-14,-116.1008859174,33.1740769746,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/37635544
+37854764,2020-01-17,-114.0344850302,38.9898365163,3,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/37854764
+38012067,2020-01-26,-115.17301167,32.972725,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/38012067
+38046908,2020-01-19,-117.1128311157,36.6108818054,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/38046908
+38187813,2020-02-01,-116.2514877775,33.3002957607,102,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/38187813
+38671928,2019-09-07,-114.4608510286,27.7688339498,976,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/38671928
+38710901,2020-02-15,-104.28547,32.45646667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/38710901
+39124392,2019-12-31,-116.85099667,36.38163,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/39124392
+42768857,2020-04-20,-103.9424333173,29.1487186131,122,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/42768857
+44671807,2020-05-02,-113.0203756879,39.8871876033,790,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/44671807
+45341846,2020-05-06,-113.91006396,32.6410532,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/45341846
+46530272,2003-06-03,-107.3190557957,33.8445412374,662,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/46530272
+47291274,2020-05-25,-110.6431391761,32.0130550456,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/47291274
+48240948,2020-06-02,-105.2386762296,34.5918580285,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/48240948
+48584152,2020-06-03,-118.0092857367,37.612318817,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/48584152
+49896189,2015-03-06,-100.2721635641,24.4774469772,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/49896189
+50510648,2020-06-20,-109.4848006626,32.1462315862,25,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/50510648
+50635311,2020-06-16,-113.8038333333,32.6988055556,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/50635311
+51204947,2020-06-28,-118.1432269722,35.100554,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/51204947
+53236090,2009-07-19,-113.8720483439,37.0817312646,436,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/53236090
+54149155,2009-09-26,-115.9314899408,33.5884291111,244,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/54149155
+54863096,2020-07-29,-117.1031879967,36.6180279489,1635,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/54863096
+55246559,1996-11-15,-116.0166666,33.6286338,1806,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/55246559
+55246560,1996-11-15,-116.0140663922,33.6289518224,244,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/55246560
+55666381,2020-08-06,-106.700207,32.289693,56,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/55666381
+56300443,2020-08-12,-114.6574512497,27.775376082,1311,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/56300443
+57269269,2020-08-21,-113.803295,32.66586582,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/57269269
+57894725,2020-08-27,-113.066906,26.6397149722,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/57894725
+60394454,2020-09-11,-113.48375833,31.40500833,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/60394454
+61160645,2020-09-25,-115.0434424055,36.2683352332,30,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/61160645
+62269333,2020-10-10,-114.2022883519,32.6188641897,138,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/62269333
+63352712,2020-10-13,-108.3319123917,31.1415308976,31,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/63352712
+63438082,2020-10-24,-116.410692,33.669151,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/63438082
+64057071,2020-11-01,-115.3193305556,30.0572833333,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/64057071
+64323586,2020-11-06,-104.2157430932,32.8388469274,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/64323586
+64808889,2020-11-12,-104.9058833333,32.8482783333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/64808889
+65412880,2020-11-21,-117.1140666667,36.6135866667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/65412880
+65831474,2020-11-27,-114.7057891348,33.7954384269,652,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/65831474
+65932273,2020-11-30,-117.1133888333,36.6134083333,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/65932273
+65942586,2020-12-01,-117.28081333,36.64518333,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/65942586
+66009232,2020-11-28,-117.6456138889,37.2109083333,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/66009232
+66029385,2020-10-01,-114.5550327748,36.4171675318,441,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/66029385
+66130634,2020-12-03,-117.2133466667,36.0771416667,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/66130634
+66495950,2020-01-01,-116.177789094,32.9856454488,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/66495950
+66537534,2020-12-13,-113.4839083333,31.404895,24,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/66537534
+66686979,2020-12-05,-111.0493083333,33.305425,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/66686979
+66922518,2020-12-19,-116.1019253468,33.1664406171,357,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/66922518
+67104641,2020-12-23,-113.0513305,33.02068333,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/67104641
+67373585,2020-12-31,-115.83535,33.649055,10,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/67373585
+67619415,2020-12-25,-112.2816821498,32.9845493885,1953,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/67619415
+67839891,2021-01-03,-114.6269729169,34.65323009,244,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/67839891
+67890548,2021-01-10,-114.5092361666,33.5972647468,186,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/67890548
+67921847,2020-11-11,-116.4216859873,35.681107889,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/67921847
+68346102,2017-08-17,-101.3551,23.2635,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/68346102
+68842746,2016-11-20,-108.2799202414,30.7056071002,31,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/68842746
+69324320,2021-01-16,-116.8642706303,36.4357440061,1969,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/69324320
+69416542,2021-02-06,-112.5192030512,33.2469835145,198,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/69416542
+69684730,2008-08-01,-108.484325982,30.9140462076,615,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/69684730
+69797037,2021-02-15,-115.8366833333,33.907625,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/69797037
+69876726,1994-08-26,-108.5033419429,30.817895562,458,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/69876726
+70968311,2021-03-10,-114.4550909722,29.88305,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/70968311
+71227855,2018-02-05,-112.6348805556,30.1246222222,1921,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/71227855
+71319660,2021-03-15,-112.9232052656,37.2216330387,1953,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/71319660
+71432830,2020-12-09,-101.4037328103,25.4741984688,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/71432830
+71607493,2017-08-27,-106.492194,31.224694,1005,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/71607493
+71915727,2021-03-20,-116.69496167,36.248305,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/71915727
+71980034,2021-03-10,-116.5516559722,35.6528539722,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/71980034
+72237122,2016-06-18,-112.9131060043,40.8792170682,61,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/72237122
+72386115,2021-03-28,-114.8355016564,32.7545628899,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/72386115
+73350713,2021-04-06,-118.4460843437,34.9196253763,61,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/73350713
+74025331,2018-02-08,-112.63475,30.124575,1500,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/74025331
+74025332,2018-02-09,-112.6346972222,30.1246916667,1500,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/74025332
+74114678,2021-04-15,-113.5081716667,37.1539638333,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/74114678
+75398738,2021-04-19,-113.1174463412,31.7213875522,1953,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/75398738
+75605482,2021-04-27,-116.0995604565,33.1757582864,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/75605482
+79203687,2021-05-15,-115.3206933333,33.1481583333,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/79203687
+79711479,2017-08-18,-115.124065,37.74319,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/79711479
+82504937,2021-06-10,-118.7187633333,39.4178716667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/82504937
+82639691,2021-06-11,-114.1057666667,39.0589721667,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/82639691
+83049653,2021-06-12,-114.105541,39.059196,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/83049653
+84618644,2021-06-10,-108.839395,32.259875,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/84618644
+84938650,2021-06-08,-115.6324540079,36.5729481187,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/84938650
+85012750,2017-12-15,-115.2524494359,37.8373999655,61,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/85012750
+86375948,2021-07-10,-109.1534805,31.9118583333,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/86375948
+87622948,2021-06-17,-113.528089039,37.0124067353,685,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/87622948
+87680909,2021-07-18,-113.1765817401,33.9105156739,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/87680909
+89528312,2021-08-01,-114.990425,33.5946366667,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/89528312
+91725700,2021-08-18,-116.22553864,33.5753132622,30,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/91725700
+91886598,2021-08-09,-116.0435536143,34.1286841612,176,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/91886598
+92146281,2021-08-22,-107.6405116667,36.4255333333,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/92146281
+92580357,2021-08-26,-109.3406260986,32.0134959765,1948,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/92580357
+93424967,2021-09-01,-116.281323,33.25554,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/93424967
+93440384,2021-09-01,-114.1100305,36.4131916667,23,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/93440384
+93985505,2021-03-26,-115.7750542436,33.6751694196,122,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/93985505
+95622449,2019-03-27,-108.9714018809,32.2528414767,594,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/95622449
+96978268,2021-10-02,-116.1397685056,35.4200189118,24,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/96978268
+98274226,2021-10-10,-112.8192489695,33.8863675764,328,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/98274226
+98450820,2021-10-16,-115.0343909722,32.985694,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/98450820
+98673706,2021-10-18,-116.6643027778,35.2201027778,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/98673706
+100153873,2021-11-03,-117.5570466667,35.2885966667,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/100153873
+101238530,2021-11-13,-117.1151971667,36.6062883333,5,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/101238530
+102224591,2021-11-27,-117.1131445,36.6168866667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/102224591
+102224676,2021-11-27,-117.1119916667,36.61577,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/102224676
+102272813,2021-11-30,-116.921379827,36.788530902,209,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/102272813
+102488341,2021-12-04,-119.673775,34.944905,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/102488341
+102754935,2021-12-08,-116.1978266997,33.7605611997,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/102754935
+103080264,2020-07-14,-112.0462372899,30.3359224075,353,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/103080264
+103129116,2021-12-15,-115.80143,33.672645,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/103129116
+103868354,2021-12-27,-115.2427527778,32.9721194444,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/103868354
+104310513,2022-01-02,-113.6235044867,37.1465373063,22,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/104310513
+104394842,2022-01-03,-120.8305303218,36.5571684662,769,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/104394842
+104515125,2022-01-05,-116.8620829697,34.4437570484,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/104515125
+104730664,2022-01-08,-114.226395,33.58572,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/104730664
+104758734,2022-01-10,-116.5955416667,36.6459416667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/104758734
+104768029,2022-01-06,-115.2666153125,34.7504379567,750,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/104768029
+104792713,2022-01-11,-116.295365,33.2465366667,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/104792713
+105007398,2022-01-02,-114.4486308843,32.8672631518,112,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/105007398
+105014712,2022-01-15,-116.2961831176,33.2321636938,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/105014712
+105027889,2022-01-16,-114.8641741276,32.8817135594,196,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/105027889
+105179806,2010-01-30,-100.8129272864,24.4357826513,61,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/105179806
+106382738,2022-02-05,-117.6829764508,37.1106109328,122,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/106382738
+107014587,2022-02-18,-115.4722944444,33.2473694444,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/107014587
+107357446,2022-02-21,-118.0075146286,35.310456727,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/107357446
+107445173,2022-02-25,-111.0490333333,32.305855,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/107445173
+107616897,2022-02-26,-114.7743205977,33.0802566549,758,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/107616897
+107618466,2022-02-26,-116.176908867,32.9668793204,395,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/107618466
+108058804,2022-02-22,-116.8729060834,36.4619490229,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/108058804
+108266973,2022-03-05,-116.3125267025,33.0950287284,426,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/108266973
+108525240,2022-03-13,-112.84735,32.40262,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/108525240
+108555995,2022-03-13,-114.9003616667,36.2236166667,12,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/108555995
+108949948,2022-03-18,-114.9113,33.5867716667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/108949948
+109468865,2022-03-22,-113.4418333333,37.1642333333,43,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/109468865
+109712657,2022-03-27,-114.4822194444,36.6381638889,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/109712657
+109750095,2022-01-04,-116.1644077187,34.0940394277,29,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/109750095
+109750231,2022-03-24,-114.6005724763,36.4201230466,227,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/109750231
+110412150,2022-04-02,-117.8874651153,35.190157152,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/110412150
+110923510,2022-04-09,-112.6866194888,33.6047305599,9,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/110923510
+110927325,2022-04-06,-112.8582871333,32.4267004203,733,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/110927325
+111069863,2022-03-27,-114.4822383333,36.63807,30,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/111069863
+111417395,2022-04-13,-116.0997778333,33.175645,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/111417395
+111443465,2022-04-13,-116.1011055,33.1760366667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/111443465
+112120362,2022-04-19,-114.5918046,35.8275318997,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/112120362
+112259777,2022-04-15,-117.1099145997,36.6053007,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/112259777
+112432224,2022-04-22,-114.568069458,32.4952354431,89,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/112432224
+112934525,2022-04-22,-117.1152233659,36.6064815607,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/112934525
+113005048,2022-04-23,-114.53524,36.507332,1128,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/113005048
+114732795,2022-04-29,-117.1977080997,34.4416372,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/114732795
+116265314,2022-04-27,-113.0485695,33.0217805,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/116265314
+116794310,2022-05-12,-116.30082,33.1341388333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/116794310
+117493305,2022-05-17,-115.9309939722,35.958725,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/117493305
+117596342,2017-11-03,-114.1562805,39.0493611667,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/117596342
+117762237,2022-05-15,-114.1106235886,39.0557170561,735,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/117762237
+118098225,2022-05-12,-114.553055,36.4169833333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/118098225
+118815979,2021-07-29,-112.15857,32.71683,25,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/118815979
+118867578,2022-05-26,-112.1595005008,35.2832876391,65,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/118867578
+120103073,2021-05-30,-117.67533,37.1113916667,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/120103073
+120573195,2015-08-12,-114.125916667,27.7649722222,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/120573195
+120710168,2015-11-10,-114.037,27.3621944444,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/120710168
+123709916,2022-06-27,-116.5369333333,34.3768666667,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/123709916
+125069261,2022-05-30,-115.8308616556,33.8957682078,244,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/125069261
+125852909,2022-07-11,-106.6789116667,34.4212783333,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/125852909
+125978308,2022-07-12,-106.29097,32.82313,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/125978308
+126140597,2022-06-12,-116.2996746023,33.1317000405,66,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/126140597
+126702897,2022-07-17,-106.7492,34.420395,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/126702897
+129628184,2022-08-02,-115.6195693946,30.8169000435,12,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/129628184
+133920202,2022-09-03,-113.028897,39.878022,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/133920202
+134472470,2022-02-20,-114.9206166667,33.5921277778,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/134472470
+135182325,2021-08-31,-117.4266508493,35.2052757022,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/135182325
+135290076,2021-05-30,-110.8451216667,31.7613883333,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/135290076
+135483462,2022-09-13,-116.388553721,34.0706650816,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/135483462
+136883124,2022-09-28,-108.817176925,37.3576050996,1641,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/136883124
+137024368,2022-09-28,-116.2696089038,33.2999276743,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/137024368
+137104600,2022-09-29,-115.2974,36.3359997222,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/137104600
+137124813,2022-09-29,-105.9941159567,34.1939285006,350,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/137124813
+137341938,2022-10-02,-117.4276506,35.2055014997,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/137341938
+137529151,2022-10-01,-110.0563906997,32.8629175,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/137529151
+137821368,2022-08-06,-106.136824471,34.5629514334,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/137821368
+139062890,2022-08-31,-117.4288706458,35.2058983994,300,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/139062890
+139063124,2022-09-11,-117.4277117012,35.2040048247,386,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/139063124
+139063461,2022-09-12,-117.4271962258,35.2040048466,440,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/139063461
+139063463,2022-09-15,-117.4270674798,35.2043731387,61,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/139063463
+139063575,2022-10-01,-117.4271105713,35.2042152602,425,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/139063575
+139489602,2022-10-20,-116.298053266,33.1363338814,122,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/139489602
+140067842,2016-11-28,-117.428,35.208,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/140067842
+140278336,2022-10-26,-116.1471127056,34.027862497,244,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/140278336
+140462854,2022-10-29,-107.6450576667,30.1839504167,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/140462854
+142373777,2022-11-17,-116.312355,33.7734383333,96,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142373777
+142386726,2022-11-19,-111.0976721667,32.4566,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142386726
+142466562,2022-11-16,-116.1733333333,33.2870866667,24,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142466562
+142653123,2022-11-18,-106.935363111,33.7545006685,61,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142653123
+142722596,2022-11-21,-107.281283374,33.2892270759,61,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142722596
+142723372,2022-11-21,-107.0196975002,33.7286893476,122,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142723372
+142882019,2022-11-17,-117.4288273085,35.2052319798,433,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142882019
+142882155,2021-10-16,-117.4314022055,35.2042515155,433,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142882155
+142882968,2021-10-29,-117.4306297166,35.2053560751,433,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142882968
+142883124,2021-11-14,-117.4311661735,35.2040761877,433,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142883124
+142936399,2022-11-25,-115.21843,31.309355,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142936399
+142936561,2022-11-25,-115.21837,31.3094116667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142936561
+142938908,2022-11-25,-115.2126216667,31.3244616667,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142938908
+142939151,2022-11-25,-115.2125866667,31.3244716667,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/142939151
+143197880,2022-11-28,-117.8689633333,35.7294966667,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/143197880
+143475045,2022-12-01,-114.7261883333,33.567375,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/143475045
+143475119,2022-11-30,-114.7205908423,33.5745744247,123,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/143475119
+143475144,2022-12-01,-114.72207,33.5727366667,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/143475144
+143872611,2018-12-30,-108.8787031983,31.8067948482,122,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/143872611
+143885593,2022-01-31,-109.7789418697,35.0669390924,25,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/143885593
+144258121,2022-12-12,-113.2546616667,31.3071916667,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/144258121
+144258748,2022-12-12,-113.2547083333,31.3071416667,16,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/144258748
+144314290,2022-12-13,-116.4453366667,33.7249533333,12,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/144314290
+144314535,2022-12-10,-116.6597583333,34.0267916667,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/144314535
+144329285,2022-12-13,-101.7100099722,23.862365,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/144329285
+144538640,2022-12-16,-115.99202,33.6365616667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/144538640
+144705862,2015-03-05,-108.4021926892,30.8635245366,244,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/144705862
+145024988,2022-12-23,-113.6463083333,37.2158866667,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/145024988
+145366902,2021-05-30,-117.4680461647,36.3414496892,41,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/145366902
+145628322,2023-01-01,-116.2257140502,32.8644042162,252,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/145628322
+146157471,2023-01-07,-117.4298079722,35.206246,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/146157471
+146464104,2023-01-11,-115.4344116667,35.56938,6,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/146464104
+146738981,2023-01-15,-116.2376679722,33.0495829722,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/146738981
+147679359,2023-01-23,-114.1635,33.37075,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/147679359
+147713248,2023-01-28,-116.3302586116,33.3007544187,348,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/147713248
+147743720,2022-11-08,-109.5133222222,38.7384944167,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/147743720
+148294788,2023-02-03,-115.9637966667,33.2187616667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/148294788
+148655504,2023-02-10,-116.4261633333,33.8966033333,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/148655504
+148667823,2023-02-11,-115.7095616027,33.0842268865,1006,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/148667823
+149149705,2014-12-22,-106.7578604908,32.4793743388,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/149149705
+149160686,2014-10-06,-106.7578604908,32.4793743388,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/149160686
+149174624,2004-09-15,-114.9308049785,36.1967814362,419,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/149174624
+149365669,2023-02-17,-106.6015131,36.1775003997,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/149365669
+149438583,2015-03-02,-106.7578604908,32.4793743388,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/149438583
+149439047,2015-03-04,-106.7578604908,32.4793743388,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/149439047
+149439776,2015-11-13,-106.7578604908,32.4793743388,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/149439776
+149569485,2023-02-24,-113.59810362,33.60069793,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/149569485
+149584822,2011-07-07,-114.94277,34.02146,20,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/149584822
+149963094,2023-02-28,-113.9440166667,34.0174111667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/149963094
+153103274,2023-03-26,-113.7342194444,31.8387666667,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/153103274
+153103295,2023-03-26,-113.7711277778,31.833675,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/153103295
+153385573,2023-03-07,-117.427956,35.203966,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/153385573
+153609379,2023-02-03,-117.431931,35.205694,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/153609379
+153625786,2023-01-07,-117.428211,35.207122,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/153625786
+153641952,2023-01-08,-117.428211,35.207122,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/153641952
+153642012,2023-01-14,-117.428211,35.207122,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/153642012
+153642326,2023-01-31,-117.428211,35.207122,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/153642326
+153747361,2022-11-23,-117.430359,35.205121,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/153747361
+153748982,2022-12-03,-117.430359,35.205121,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/153748982
+153751053,2023-01-05,-117.430359,35.205121,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/153751053
+154349045,2023-04-09,-118.5877544805,34.8327275815,168,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/154349045
+155933335,2023-04-21,-116.2804129602,36.615415689,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/155933335
+156339646,2023-04-22,-116.6115333333,36.7125033333,468,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/156339646
+157552938,2023-04-28,-115.9638833333,33.2186783333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/157552938
+158069658,2018-10-18,-106.7578604908,32.4793743388,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/158069658
+159802702,2023-04-20,-117.2011583997,34.4260372997,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/159802702
+162573892,2022-04-06,-115.1690683372,36.2151808377,21,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/162573892
+162754068,2021-12-01,-106.7587586904,32.479344554,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/162754068
+163998483,2022-12-12,-106.7587586904,32.479344554,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/163998483
+164005800,2022-12-27,-106.7587586904,32.479344554,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/164005800
+164930618,2023-05-26,-116.0022491667,33.6162426024,1182,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/164930618
+167272134,2023-01-13,-114.839674,35.328775,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/167272134
+167281757,2023-01-28,-114.880872,35.340325,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/167281757
+167284036,2023-02-02,-114.876447,35.361617,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/167284036
+167284059,2023-02-03,-114.87083,35.375313,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/167284059
+167315565,2023-02-04,-114.849337,35.359391,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/167315565
+167435879,2023-04-06,-115.022796,35.674203,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/167435879
+169187059,2023-06-23,-112.5133133333,33.5713466655,20,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/169187059
+170469087,2023-07-01,-118.9740227535,35.5274128433,63,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/170469087
+173944042,2023-07-20,-114.815220125,32.0313567476,680,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/173944042
+175243750,2023-04-09,-102.616741,27.170767,14,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/175243750
+175925594,2023-07-28,-114.7939049722,32.6774029722,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/175925594
+177862178,2023-07-30,-109.0358355556,31.9321791667,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/177862178
+178602652,2017-06-30,-117.3628757894,34.5921881288,111,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/178602652
+179106699,2023-08-19,-103.881121567,30.8074070347,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/179106699
+179915904,2023-08-22,-116.252005,33.1660166667,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/179915904
+180617818,2023-08-26,-106.8207333333,33.7299361111,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/180617818
+180763251,2023-08-29,-118.8830968738,35.6123954201,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/180763251
+180879053,2022-12-25,-117.107597217,36.6253993492,250,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/180879053
+181769694,2023-09-03,-113.701095,33.7236533333,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/181769694
+182011016,2023-09-05,-115.5950226708,33.1890657729,375,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/182011016
+182713086,2023-08-29,-109.7414866667,38.47142,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/182713086
+184385098,2023-09-22,-113.3433688,33.63094457,9,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/184385098
+185050773,2022-12-18,-117.1478067798,36.6089485909,35,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/185050773
+186108542,2023-09-27,-117.939613094,36.0239504769,977,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/186108542
+187861785,2023-09-22,-117.428211,35.207122,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/187861785
+187861926,2023-10-06,-117.428211,35.207122,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/187861926
+188951239,2023-10-24,-117.3432565451,35.9988931964,500,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/188951239
+189070857,2023-09-13,-116.1121783,33.0173918,33,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/189070857
+189572467,2023-10-31,-114.7150472222,33.5807833333,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/189572467
+190263378,2023-10-16,-117.4302989644,35.2050063078,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/190263378
+190954533,2023-11-12,-112.6248202471,39.8033929619,244,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/190954533
+191798633,2023-10-16,-117.431931,35.205694,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/191798633
+191846378,2023-11-21,-116.2955633333,33.2477833333,71,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/191846378
+192549383,2016-08-26,-109.1485146448,31.6697495029,977,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/192549383
+193347889,2023-12-07,-118.969155,35.4114116667,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/193347889
+193729916,2022-03-01,-114.9699177528,33.4132390713,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/193729916
+193795222,2023-12-11,-113.9950319722,31.7124939722,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/193795222
+193851171,2023-12-01,-115.9643333333,33.2176166667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/193851171
+194319248,2023-12-16,-114.163658,33.371872,100,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/194319248
+194474665,2023-12-20,-116.2948616667,33.2466283333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/194474665
+194549541,2023-11-27,-117.4338320871,35.205194059,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/194549541
+194549620,2023-12-12,-117.4338320871,35.205194059,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/194549620
+194890395,2023-12-25,-115.4001828304,33.7124299211,37,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/194890395
+195704685,2024-01-03,-116.1892346666,32.8366031824,3,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/195704685
+195891632,2024-01-05,-113.8637725264,36.9654216006,574,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/195891632
+196426738,2023-12-16,-116.8874170037,36.5445822269,41,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/196426738
+196895019,2024-01-14,-116.0879199385,32.7802890151,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/196895019
+196961400,2023-12-30,-117.428211,35.207122,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/196961400
+196961633,2023-12-31,-117.428211,35.207122,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/196961633
+196962166,2024-01-07,-117.428211,35.207122,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/196962166
+197343284,2024-01-10,-114.7960133333,33.5753366667,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/197343284
+198005616,2024-01-30,-119.7599048997,39.1931471997,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/198005616
+199148563,2024-02-12,-116.1017388333,33.17722,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/199148563
+199618283,2024-02-17,-116.3637,32.966,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/199618283
+199678230,2024-01-31,-106.7502785008,32.4701945285,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/199678230
+200841404,2024-02-25,-106.7502785008,32.4701945285,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/200841404
+202005033,2024-02-03,-102.655492,27.199688,29,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/202005033
+202043074,2024-03-09,-116.295395,33.2485,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/202043074
+202325052,2024-03-13,-107.208741568,31.7898764744,560,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/202325052
+202597532,2024-03-14,-115.965879153,33.2161874604,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/202597532
+203126738,2024-01-16,-117.427676791,35.2039101236,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/203126738
+203165724,2024-01-17,-117.4324775722,35.2053167884,35,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/203165724
+203166779,2024-02-04,-117.4324775722,35.2053167884,35,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/203166779
+203171273,2024-01-14,-117.4276227816,35.2072300324,60,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/203171273
+203175154,2024-02-20,-117.4276227816,35.2072300324,60,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/203175154
+203811615,2024-03-24,-106.9681278,32.6327753997,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/203811615
+205186397,2024-03-18,-115.7883218792,32.9288580853,1344,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/205186397
+205515576,2023-12-22,-117.4288523468,35.2049268375,100,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/205515576
+205515789,2023-12-27,-117.428844042,35.2049190782,100,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/205515789
+205516068,2024-01-06,-117.42881,35.204903,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/205516068
+205516491,2024-01-07,-117.4288582689,35.2049005724,100,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/205516491
+205516636,2024-01-15,-117.4288445277,35.2049087364,100,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/205516636
+205802060,2024-04-04,-119.908425,35.339655,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/205802060
+214313869,2024-05-07,-115.9545583333,33.24685,6,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/214313869
+215714673,2024-05-14,-118.3055247608,34.7037765014,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/215714673
+215799506,2013-04-13,-114.636824123,36.7516187295,977,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/215799506
+215891049,2024-05-14,-116.2959262943,33.1373364702,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/215891049
+217055669,2023-11-22,-115.7161774519,34.8876508032,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/217055669
+217562871,2024-05-16,-114.7450570997,36.4778566,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/217562871
+218045265,2020-10-24,-114.6636199589,33.7591485379,113,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/218045265
+218292381,2024-05-22,-119.7300386447,35.092422517,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/218292381
+218556916,2024-05-26,-118.9694133333,35.38332,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/218556916
+220480793,2024-06-01,-109.0512961033,34.2025622886,495,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/220480793
+220574442,2024-06-04,-104.0217324346,30.3190394073,146,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/220574442
+220599250,2024-06-01,-109.0478939778,34.2070569174,1006,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/220599250
+220611894,2024-06-04,-116.666345,39.258675,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/220611894
+221796527,2023-09-12,-117.2525656482,34.5739249667,97,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/221796527
+223535133,2024-06-18,-103.6501111111,30.3702861111,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/223535133
+224690148,2024-06-19,-113.1545778333,39.897205,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/224690148
+226049425,2024-06-29,-109.7399366667,38.4692216667,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/226049425
+227446311,2024-07-05,-109.5008913428,38.733711458,190,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/227446311
+229433781,2024-07-11,-109.74257,38.48433,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/229433781
+232399871,2024-07-28,-117.6278000885,38.0366386799,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/232399871
+232935798,2024-07-30,-118.3130622997,40.4726971997,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/232935798
+232939770,2024-07-31,-118.3135649934,40.4733396885,177,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/232939770
+233521177,2024-08-03,-116.3350920584,34.1921540091,180,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/233521177
+235818272,2024-08-01,-102.8054248019,28.9502021642,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/235818272
+237413459,2024-08-22,-117.9859555556,35.2423027778,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/237413459
+237498544,2009-09-05,-113.312029467,31.3429011254,61,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/237498544
+237677520,2024-08-18,-115.6156016667,37.544815,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/237677520
+238617865,2024-08-29,-117.6466853544,34.9850723526,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/238617865
+241693201,2024-09-13,-112.3518548906,39.6903314203,58,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/241693201
+244800837,2024-09-27,-111.2880463997,32.6083129,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/244800837
+244820922,2024-08-24,-117.4316759498,35.2040807909,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/244820922
+244820989,2024-09-02,-117.4316759498,35.2040807909,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/244820989
+244884923,2024-09-30,-118.9245071411,35.3538169861,9,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/244884923
+245988361,2024-10-06,-116.5228045732,40.7034372724,880,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/245988361
+246103397,2024-10-06,-115.6513366667,36.0041861167,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/246103397
+246107165,2024-10-06,-115.651405,36.0041916667,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/246107165
+247223008,2024-10-13,-111.4807934314,32.7776740627,269,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/247223008
+247526869,2024-10-13,-118.3958020962,34.7329931277,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/247526869
+248263738,2024-09-08,-115.6881450489,34.8953425631,127,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/248263738
+248264482,2024-09-08,-115.7120338082,34.8883087677,52,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/248264482
+249819082,2024-10-30,-116.1089577019,33.1624052693,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/249819082
+250241141,2024-10-27,-117.237625,36.460705,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/250241141
+250361504,2024-10-24,-117.4318579813,35.2036160821,60,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/250361504
+250361597,2024-10-27,-117.4318579813,35.2036160821,60,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/250361597
+250361780,2024-10-30,-117.4318579813,35.2036160821,60,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/250361780
+250361843,2024-11-01,-117.4318579813,35.2036160821,60,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/250361843
+250868104,2024-11-04,-116.153725,32.866447,9,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/250868104
+251041255,2024-11-07,-116.12493,38.5769439722,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/251041255
+251240841,2024-11-08,-116.1346078918,32.9928918963,37,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/251240841
+251674255,2024-11-14,-116.0260916667,34.0695888333,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/251674255
+251712156,2024-10-08,-109.7368846106,35.1086288839,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/251712156
+251769428,2024-11-14,-116.295295,33.2432466667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/251769428
+251799237,2024-08-28,-109.6269261015,30.3612057364,946,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/251799237
+251903623,2024-11-16,-112.50422019,33.55533093,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/251903623
+252514259,2024-11-19,-116.153021,32.866568,9,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/252514259
+252648024,2024-11-21,-116.3423120256,33.1335751944,1759,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/252648024
+252942256,2024-11-23,-113.3044416667,39.8548566667,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/252942256
+253103211,2024-11-24,-116.2150790915,32.862895578,734,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/253103211
+253647388,2024-04-18,-108.1783475635,30.9552537475,122,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/253647388
+253898769,2015-11-04,-115.999375,33.6195222167,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/253898769
+254245012,2024-12-04,-114.0112203,33.2376188,195,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/254245012
+255220896,2024-12-14,-116.153464,32.846251,19,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/255220896
+255695306,2011-05-04,-114.715482,36.047456,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/255695306
+257260957,2017-06-27,-114.5494640701,39.0357904995,977,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/257260957
+257299583,2024-12-31,-117.2616693377,36.661869201,46,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/257299583
+257538731,2025-01-05,-116.2272197812,32.8431054444,22,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/257538731
+258323894,2024-12-09,-117.4324775722,35.2053167884,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/258323894
+258323969,2024-12-24,-117.4324775722,35.2053167884,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/258323969
+258762860,2025-01-17,-111.725646928,29.1848019585,154,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/258762860
+259021754,2025-01-19,-119.8477462834,35.1463380167,864,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/259021754
+259594046,2025-01-25,-116.2436366667,32.9914166667,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/259594046
+259594047,2025-01-25,-116.2435966667,32.9914533333,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/259594047
+259594103,2025-01-25,-116.2436366667,32.9913633333,32,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/259594103
+260539450,2024-12-02,-106.7384823348,32.4704197639,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/260539450
+260763243,2025-02-05,-115.8936383333,32.61368,9,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/260763243
+261181075,2025-02-09,-106.7737883333,32.6126333333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/261181075
+261304784,2025-02-10,-106.0407701997,32.8425993,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/261304784
+261946496,2025-02-12,-116.1581931263,33.1541064057,317,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/261946496
+262065553,2025-01-24,-117.4318579813,35.2036160821,60,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/262065553
+262065621,2025-01-25,-117.4318579813,35.2036160821,60,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/262065621
+262876487,2025-02-23,-116.2330934142,32.8641119764,799,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/262876487
+262897778,2025-01-21,-116.1073957669,33.2514096647,165,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/262897778
+263123710,2025-02-23,-114.764825,33.4910916667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/263123710
+263777675,2025-02-23,-115.1966866667,33.4156566667,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/263777675
+263791303,2025-02-23,-115.194815,33.41535,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/263791303
+263811455,2025-02-23,-114.7647888883,33.491130555,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/263811455
+264769924,2025-03-08,-117.22722,36.4975966667,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/264769924
+266135006,2025-03-19,-116.145775,35.369025,479,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/266135006
+266284124,2025-02-15,-115.7199504702,34.8914766792,821,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/266284124
+266404103,2025-03-22,-117.8643633333,42.6748583333,3,Vulpes macrotis,TRUE,https://www.inaturalist.org/observations/266404103
+267153016,2025-03-26,-116.5583536563,36.1664497213,93,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/267153016
+268324170,2025-04-02,-118.9944401412,35.3637968313,413,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/268324170
+268630624,2025-03-29,-112.64373,33.3129116667,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/268630624
+269158912,2025-04-06,-114.23005,36.6096633333,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/269158912
+269405016,2025-02-16,-115.7311089,34.9108217,1886,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/269405016
+269725680,2017-01-10,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/269725680
+269727115,2017-01-12,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/269727115
+269727175,2017-01-13,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/269727175
+269727985,2017-01-19,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/269727985
+269728528,2017-01-20,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/269728528
+269729241,2017-02-01,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/269729241
+269729846,2017-02-14,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/269729846
+270459351,2025-04-13,-115.5781021118,35.0757713318,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/270459351
+271581999,2024-06-29,-109.7399966667,38.4692083333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/271581999
+271604514,2005-05-23,-119.3428138889,40.6459444444,1,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/271604514
+272873250,2025-04-24,-116.0339583333,34.0133138833,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/272873250
+272914183,2025-02-25,-113.5539466667,36.9304616667,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/272914183
+274925659,2025-04-26,-114.6693555556,35.2374888889,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/274925659
+275053839,2025-04-26,-115.0814138333,35.366875,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/275053839
+279880445,2025-05-05,-115.241975,36.0694971667,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/279880445
+281251355,2025-04-29,-114.0725060552,38.9457437739,12,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/281251355
+282923777,2025-05-21,-111.4646924075,32.8813049815,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/282923777
+283662887,2020-11-10,-114.6736616667,33.7439533333,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/283662887
+284916704,2025-05-26,-116.101271654,33.1750658407,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/284916704
+288499844,2025-06-07,-118.1937055556,37.1684,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/288499844
+291262906,2025-06-06,-117.1008306742,34.813013301,334,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/291262906
+291677075,2025-06-21,-119.0475221667,35.3824966667,24,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/291677075
+292208083,2025-06-04,-119.757696125,35.1893397336,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/292208083
+293638266,2018-09-27,-117.8587411344,35.1509391157,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/293638266
+294452236,2025-06-26,-115.7189260796,34.8863300002,281,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/294452236
+295879469,2025-07-06,-119.1033447906,35.3486635543,1517,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/295879469
+297118482,2025-07-11,-111.8724976249,34.8502748903,815,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/297118482
+297982928,2025-07-13,-109.7962633333,38.6292283333,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/297982928
+298113691,2025-07-14,-111.2251966667,32.6165916667,14,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/298113691
+298733048,2025-07-17,-115.6532745361,35.0118904114,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/298733048
+299274647,2025-07-19,-116.1621875294,34.0160372562,587,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/299274647
+300969079,2025-07-25,-119.7310201522,35.0997344005,205,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/300969079
+301312550,2025-07-12,-109.7378851148,38.4861728373,8,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/301312550
+301606663,2025-07-27,-106.438097991,31.5261251146,217,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/301606663
+303849796,2017-06-17,-117.4356862382,35.2056006824,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/303849796
+303852445,2025-07-27,-117.4349835013,35.2044632327,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/303852445
+304885554,2025-08-08,-115.2769539723,35.8205911862,408,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/304885554
+306179545,2025-08-13,-116.2940731645,33.1405562571,219,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/306179545
+306352979,2025-08-13,-112.351651378,39.6903309043,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/306352979
+308117612,2025-08-13,-113.0378819997,40.4140593997,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/308117612
+308808175,2025-07-04,-117.4347528294,35.2064904681,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/308808175
+308815336,2025-08-23,-117.4321403576,35.2056751969,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/308815336
+312028345,2025-09-06,-110.8402138889,31.75485,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/312028345
+313329805,2025-09-11,-119.1845777778,34.9875527778,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/313329805
+313357204,2025-05-24,-118.4704817194,41.6489368081,143,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/313357204
+316119886,2025-09-23,-118.6429391133,38.498538158,37,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/316119886
+317177077,2025-09-27,-113.5081333333,37.0251361667,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/317177077
+320785234,2025-02-08,-109.3251143193,38.7606706882,75,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/320785234
+321060672,2025-06-04,-112.8507903624,39.9888372877,244,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/321060672
+321920284,2025-10-17,-117.2182333333,36.0756083333,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/321920284
+321973208,2025-10-18,-116.2258240208,32.8423488467,190,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/321973208
+323327945,2025-10-02,-112.1743420839,33.2283621846,272,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/323327945
+325595957,2025-11-08,-112.9592416667,35.2929472222,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/325595957
+325930977,2025-11-09,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/325930977
+326101934,2018-11-16,-117.3699909722,36.961953,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/326101934
+328112773,2025-11-10,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/328112773
+329281299,2025-06-01,-116.5519516958,36.648521326,31,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/329281299
+329510946,2025-12-04,-117.4343719444,36.33878325,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/329510946
+330310769,2025-12-06,-116.7532116667,36.8790383333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/330310769
+330735104,2025-12-13,-117.6776283333,37.1068221667,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/330735104
+330900432,2025-12-10,-117.4353724156,35.2019537811,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/330900432
+331003094,2025-11-19,-114.6310526133,34.8461266455,1575,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/331003094
+331149448,2021-05-25,-113.06306,39.66371,140,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/331149448
+331185246,2025-12-16,-107.7334555556,32.2491944444,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/331185246
+331608865,2025-12-21,-116.9034583333,36.677025,10,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/331608865
+331843079,2025-12-13,-107.4222028301,32.1333267193,460,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/331843079
+333057063,2025-12-30,-116.2248616667,32.8412283333,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/333057063
+333068317,2025-12-14,-114.1310971667,39.0385138333,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/333068317
+333520936,2026-01-01,-117.392566,36.3738451997,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/333520936
+333844835,2026-01-06,-113.7670373172,33.6554571011,14,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/333844835
+333924249,2025-12-23,-119.0189207481,35.3978024002,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/333924249
+334411609,2026-01-11,-119.1066472222,35.3534777778,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/334411609
+334534780,2025-12-19,-117.43636,35.20461,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/334534780
+334535013,2025-12-22,-117.43636,35.20461,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/334535013
+334535488,2026-01-05,-117.43636,35.20461,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/334535488
+334535733,2026-01-09,-117.43636,35.20461,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/334535733
+334559479,2026-01-12,-116.197105,33.293795,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/334559479
+335671770,2026-01-21,-116.1512037321,33.1141110857,1090,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/335671770
+336249098,2026-01-25,-116.1500052,33.2900383,195,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/336249098
+336918451,2026-01-30,-116.2979486214,33.2959721369,105,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/336918451
+336921197,2026-01-31,-113.2865216667,40.70882,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/336921197
+337053634,2026-01-31,-114.9556869722,33.125033,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/337053634
+337990461,2019-08-13,-108.4568176247,30.8374906203,1953,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/337990461
+338360287,2026-02-12,-109.855025,35.170005,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/338360287
+338653219,2026-01-15,-110.6476904459,38.6452671389,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/338653219
+339976818,2026-01-15,-117.43636,35.20461,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/339976818
+341103519,2026-03-01,-116.81330316,38.12806918,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/341103519
+341316197,2026-03-04,-116.7409294997,36.5061168,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/341316197
+342570044,2026-03-12,-115.3687880681,33.7564890621,1674,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/342570044
+343118721,2026-03-15,-107.4221138071,32.1335572346,7,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/343118721
+343789772,2020-03-08,-103.1058436662,30.8456655177,122,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/343789772
+344742236,2026-03-23,-107.4221416667,32.1336138333,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/344742236
+345039249,2025-12-03,-119.1010278333,35.35223,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/345039249
+345183248,2026-03-20,-113.627595,37.0695305,11,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/345183248
+346311061,2026-03-30,-116.3653666667,34.7875,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/346311061
+346925952,2026-03-30,-116.36538,34.7873466667,18,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/346925952
+349423435,2026-04-11,-118.7276302963,40.3928515652,15,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/349423435
+349440937,2026-04-12,-117.8822151998,35.1914786329,67,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/349440937
+350315537,2026-02-15,-114.1036916667,40.230125,6,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/350315537
+351422264,2024-12-02,-118.9702148438,35.4078178406,82,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/351422264
+351584257,2026-04-02,-113.7961498122,36.9554146863,31,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/351584257
+353074163,2026-04-24,-116.2967216667,33.2761,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/353074163
+353077291,2026-04-24,-116.29798,33.2768633333,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/353077291
+353319790,2026-04-24,-117.108643,34.8819549722,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/353319790
+356220781,2026-04-28,-116.36597,33.2566666667,1,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/356220781
+356566640,2026-04-28,-114.830475,36.4743633333,5,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/356566640
+356595384,2026-04-26,-110.8141250556,23.9847564444,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/356595384
+356737431,2022-05-29,-116.1876642331,32.8488589717,80,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/356737431
+358155970,2026-05-01,-117.8822113068,35.1922512332,8,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/358155970
+360639855,2026-05-11,-108.9794616667,32.3936666667,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/360639855
+363991836,2026-05-22,-117.1134497997,34.8659147997,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/363991836
+365710993,2026-05-16,-116.8316033333,36.393745,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/365710993
+366690919,2025-02-01,-111.3628466667,32.462455,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/366690919
+366751647,2026-05-29,-114.5533533333,36.4150883333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/366751647
+368631037,2026-06-02,-117.098175,34.8660916667,3,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/368631037
+368651421,2026-06-05,-108.3203214034,31.9181499514,554,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/368651421
+369206190,2026-06-06,-109.483117,32.3262905,932,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/369206190
+369344867,2026-06-07,-116.264731,33.250799,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/369344867
+369593474,2026-06-07,-113.1518555,37.76595,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/369593474
+371691001,2026-06-01,-116.00950555,33.1525721667,12,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/371691001
+371889239,2025-01-05,-116.2258240208,32.8423488467,190,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/371889239
+373276202,2026-06-19,-116.8898916667,36.8247716667,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/373276202
+375404833,2026-06-25,-109.8365471,38.3197538,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/375404833
+375514088,2026-06-25,-109.6441638889,31.4521361111,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/375514088
+376402829,2026-06-27,-116.247665,33.303768,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/376402829
+377268976,2026-06-25,-117.60757,37.758082,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/377268976
+377334444,2026-06-29,-118.4291206653,41.5936345669,187,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/377334444
+377747096,2023-07-14,-104.3288883333,32.111225,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/377747096
+379103885,2022-03-08,-114.1585082778,33.3812065,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/379103885
+379483795,2026-07-07,-106.782525,34.4164783333,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/379483795
+384250589,2026-07-23,-115.27443,36.0690083333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/384250589
+385414799,2026-07-26,-108.4979467582,37.348079582,11,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/385414799
+385869083,2026-04-29,-117.1641916667,34.907355,10,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/385869083
+386554127,2026-07-30,-114.5522166667,36.4170083333,48,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/386554127
+386952435,2026-07-31,-115.2187583333,40.3903366667,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/386952435
+388166771,2026-08-04,-106.6909833333,34.4353222222,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/388166771
+392282446,2026-07-17,-119.291855,38.8103116667,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/392282446
+392815612,2026-07-04,-119.2916866667,38.8105583333,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/392815612
+395115937,2026-08-27,-117.6670699947,35.5671044254,234,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/395115937
+402863037,2026-09-08,-114.0470580833,27.04226875,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/402863037
+403336766,2026-09-25,-116.1088546593,34.1439054668,75,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/403336766
+404208302,2026-09-28,-115.9413254634,33.5269225099,244,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/404208302
+404701655,2026-09-29,-109.8573616667,38.3111133333,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/404701655
+405719385,2026-10-03,-115.6616533333,34.615095,4,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/405719385
+406476373,2026-10-04,-109.0919458593,37.439445753,249,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/406476373
+407069584,2011-03-04,-114.94277,34.02146,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/407069584
+407073407,2011-03-13,-114.94277,34.02146,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/407073407
+407073661,2011-03-14,-114.94277,34.02146,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/407073661
+407074111,2011-03-15,-114.94277,34.02146,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/407074111
+407075774,2011-03-19,-114.94277,34.02146,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/407075774
+407076178,2011-03-21,-114.94277,34.02146,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/407076178
+407078680,2011-04-12,-114.94277,34.02146,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/407078680
+407357120,2023-06-24,-114.5509643553,36.4233970642,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/407357120
+407697148,2026-09-24,-116.3616735237,33.3325240113,3,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/407697148
+408790119,2026-10-12,-109.0362218,37.338049,191,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/408790119
+408839679,2026-10-16,-113.9010998234,31.6732627985,277,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/408839679
+409092675,2026-10-17,-116.1045833014,35.1434642448,115,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/409092675
+409306551,2026-09-22,-117.43636,35.20461,,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/409306551
+409308016,2026-10-07,-117.4357293931,35.205114524,15,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/409308016
+409312355,2026-06-30,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/409312355
+409318228,2026-07-30,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/409318228
+409322315,2026-09-02,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/409322315
+409322759,2026-09-06,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/409322759
+409323314,2026-09-20,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/409323314
+409323768,2026-09-30,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/409323768
+409324007,2026-10-02,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/409324007
+409324099,2026-10-06,-117.4353,35.20557,35,Vulpes macrotis macrotis,FALSE,https://www.inaturalist.org/observations/409324099
+409802174,2025-11-04,-119.0593805,35.4069833333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/409802174
+410198114,2026-09-30,-117.5944283333,35.4107083333,4,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/410198114
+410198514,2026-10-22,-115.374795,31.0717721667,2,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/410198514
+410291501,2025-11-29,-119.1288833333,35.3668583333,7,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/410291501
+413582853,2022-11-11,-117.36633,35.61391,,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/413582853
+413877187,2026-08-05,-116.8921440615,34.9050649985,56,Vulpes macrotis,FALSE,https://www.inaturalist.org/observations/413877187

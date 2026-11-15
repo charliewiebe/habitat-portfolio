@@ -1,0 +1,14 @@
+Temperature GAM: n=4002, R2=0.915
+  grid bottom-temp climatology 2.91-8.94 C
+lingcod: n=4002, positives=1519; dev. explained presence=0.444, positive=0.232
+   random 5-fold   AUC=0.880  Spearman(density)=0.609
+   latitude-block  AUC=0.850  Spearman(density)=0.592
+   grid mean density 1.977 kg/ha; observed mean CPUE 2.807 kg/ha; temp range used 3.22-8.98 C
+canary: n=4002, positives=444; dev. explained presence=0.319, positive=0.141
+   random 5-fold   AUC=0.867  Spearman(density)=0.396
+   latitude-block  AUC=0.836  Spearman(density)=0.363
+   grid mean density 0.616 kg/ha; observed mean CPUE 3.234 kg/ha; temp range used 3.22-8.98 C
+sablefish: n=4002, positives=3072; dev. explained presence=0.397, positive=0.402
+   random 5-fold   AUC=0.886  Spearman(density)=0.711
+   latitude-block  AUC=0.857  Spearman(density)=0.556
+   grid mean density 11.007 kg/ha; observed mean CPUE 13.462 kg/ha; temp range used 3.22-8.98 C

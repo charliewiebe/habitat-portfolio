@@ -1,0 +1,505 @@
+<title>Kit Fox Oregon Outlook</title>
+<meta name="description" content="Is there enough connected habitat in Oregon for a viable kit fox population, now and to 2100? An effort-corrected habitat model built from iNaturalist records, WorldClim and CMIP6 climate.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: field-report column; controls band, map + verdict side by side, outlook chart, range-wide map, checks */
+:root {
+  --bg: #f3f5f1; --surface: #ffffff; --fg: #18211d; --muted: #5a675f; --line: #d6dcd3;
+  --accent: #1d6a58; --accent-soft: #e1eee8; --good: #1f7a4d; --warn: #c27a1e; --bad: #b3432a;
+  --s245: #33679f; --s585: #bf4f33; --map-bg: #e6eae2; --map-line: #9aa59c; --map-border: #18211d;
+  --display: "Barlow Semi Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111613; --surface: #181f1b; --fg: #e5ebe6; --muted: #98a69d; --line: #2b3530;
+  --accent: #62b9a0; --accent-soft: #1d2d27; --good: #4fb47e; --warn: #e3a54a; --bad: #e57c5e;
+  --s245: #79a7dc; --s585: #ec8a6c; --map-bg: #1c231f; --map-line: #56625a; --map-border: #e5ebe6; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #111613; --surface: #181f1b; --fg: #e5ebe6; --muted: #98a69d; --line: #2b3530;
+  --accent: #62b9a0; --accent-soft: #1d2d27; --good: #4fb47e; --warn: #e3a54a; --bad: #e57c5e;
+  --s245: #79a7dc; --s585: #ec8a6c; --map-bg: #1c231f; --map-line: #56625a; --map-border: #e5ebe6; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 48px }
+.wrap { max-width: 1180px; margin: 0 auto; display: grid; gap: 28px }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: 0.005em; text-wrap: balance; margin: 0 }
+h1 { font-size: clamp(30px, 4.2vw, 44px); line-height: 1.05 }
+h2 { font-size: 24px; line-height: 1.15 }
+h3 { font-size: 17px }
+p { margin: 0 }
+.eyebrow { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; color: var(--accent) }
+.lede { max-width: 68ch; color: var(--muted); font-size: 16px }
+header { display: grid; gap: 10px }
+.links { display: flex; gap: 16px; font-size: 14px }
+.links a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft) }
+.links a:hover { border-bottom-color: var(--accent) }
+.num { font-variant-numeric: tabular-nums }
+
+.controls { display: flex; flex-wrap: wrap; gap: 14px 28px; padding-block: 14px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line) }
+.ctl { display: grid; gap: 6px; min-width: 0 }
+.ctl > span { font-family: var(--display); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted) }
+.chips { display: flex; flex-wrap: wrap; gap: 4px }
+.chips button { font: 500 13px var(--body); color: var(--fg); background: var(--surface); border: 1px solid var(--line);
+  padding: 6px 10px; border-radius: 6px; cursor: pointer }
+.chips button:hover { border-color: var(--accent) }
+.chips button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg) }
+.chips button:disabled { opacity: 0.45; cursor: default }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 24px; align-items: start }
+.mapbox { display: grid; gap: 10px; min-width: 0 }
+.maptitle { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline }
+.maptitle h2 { font-size: 20px }
+.readout { font-size: 13px; color: var(--muted); min-height: 20px }
+canvas { display: block; width: 100%; border-radius: 8px; background: var(--map-bg); touch-action: none }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; font-size: 13px; color: var(--muted) }
+.ramp { width: 180px; height: 10px; border-radius: 3px }
+.sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -2px; margin-right: 6px }
+.rampwrap { display: flex; align-items: center; gap: 8px }
+
+aside { display: grid; gap: 18px; min-width: 0 }
+.verdict { padding: 16px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); display: grid; gap: 6px }
+.verdict .tag { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px }
+.verdict .big { font-family: var(--display); font-weight: 700; font-size: 28px; line-height: 1.05 }
+.verdict.ok { border-color: var(--good) } .verdict.ok .tag, .verdict.ok .big { color: var(--good) }
+.verdict.no { border-color: var(--bad) } .verdict.no .tag, .verdict.no .big { color: var(--bad) }
+.verdict .sub { color: var(--muted); font-size: 14px }
+dl.stats { display: grid; grid-template-columns: 1fr auto; gap: 8px 12px; margin: 0; font-size: 14px }
+dl.stats dt { color: var(--muted) } dl.stats dd { margin: 0; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums }
+.assume { display: grid; gap: 12px; border-top: 1px solid var(--line); padding-top: 14px }
+.assume h3 { display: flex; justify-content: space-between; align-items: baseline }
+.assume h3 button { font: 500 12px var(--body); color: var(--accent); background: none; border: 0; cursor: pointer; padding: 2px }
+.sl { display: grid; gap: 2px }
+.sl label { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted) }
+.sl label output { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums }
+.sl input[type=range] { width: 100%; accent-color: var(--accent) }
+.cb { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--muted) }
+.cb input { accent-color: var(--accent) }
+
+section.block { display: grid; gap: 12px; border-top: 1px solid var(--line); padding-top: 22px }
+.blockhead { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: end }
+.note { font-size: 13px; color: var(--muted); max-width: 80ch }
+.chart { width: 100%; overflow-x: auto }
+.chart svg { display: block; width: 100%; min-width: 520px; height: auto }
+.chart text { font-family: var(--body); font-size: 12px; fill: var(--muted) }
+.chart .grid line { stroke: var(--line) }
+.serieslegend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: var(--muted) }
+.rangegrid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; align-items: start }
+.rangegrid .note { max-width: none }
+.checks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px }
+.tbl { overflow-x: auto }
+table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums }
+th, td { text-align: left; padding: 6px 8px 6px 0; border-bottom: 1px solid var(--line); white-space: nowrap }
+th { font-family: var(--display); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted) }
+td.hi { color: var(--good); font-weight: 600 }
+.bars { display: grid; gap: 6px; font-size: 13px }
+.bar { display: grid; grid-template-columns: minmax(0, 1fr) 42px; gap: 2px 8px; align-items: center }
+.bar .lab { grid-column: 1 / -1; color: var(--fg) }
+.bar i { display: block; height: 8px; border-radius: 2px; background: var(--accent) }
+.bar .pct { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums }
+footer { border-top: 1px solid var(--line); padding-top: 18px; display: grid; gap: 10px; font-size: 13px; color: var(--muted) }
+footer ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; max-width: 90ch }
+@media (max-width: 900px) {
+  .main, .rangegrid { grid-template-columns: minmax(0, 1fr) }
+  .checks { grid-template-columns: minmax(0, 1fr) }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Vulpes macrotis · Northern Basin and Range</div>
+    <h1>Is there room for kit foxes in Oregon?</h1>
+    <p class="lede" id="lede"></p>
+    <!--__LINKS__-->
+  </header>
+
+  <div class="controls" role="group" aria-label="Scenario controls">
+    <div class="ctl"><span>Training set</span><div class="chips" id="c-set"></div></div>
+    <div class="ctl"><span>Emissions</span><div class="chips" id="c-ssp"></div></div>
+    <div class="ctl"><span>Period</span><div class="chips" id="c-period"></div></div>
+    <div class="ctl"><span>Map layer</span><div class="chips" id="c-layer"></div></div>
+  </div>
+
+  <div class="main">
+    <div class="mapbox">
+      <div class="maptitle"><h2 id="maptitle"></h2><span class="readout" id="readout">Hover the map for cell values</span></div>
+      <canvas id="map" aria-label="Map of habitat in Oregon and adjacent states"></canvas>
+      <div class="legend" id="legend"></div>
+    </div>
+    <aside>
+      <div class="verdict" id="verdict"></div>
+      <dl class="stats" id="stats"></dl>
+      <div class="assume">
+        <h3>Assumptions <button id="reset" type="button">Reset</button></h3>
+        <div class="sl"><label for="a-q">Suitable if habitat index ≥ <output id="o-q"></output></label><input id="a-q" type="range" min="0.05" max="0.5" step="0.05"></div>
+        <div class="sl"><label for="a-dens">Density (foxes/km²) <output id="o-dens"></output></label><input id="a-dens" type="range" min="0.02" max="0.3" step="0.01"></div>
+        <div class="sl"><label for="a-mvp">Minimum viable population <output id="o-mvp"></output></label><input id="a-mvp" type="range" min="25" max="500" step="25"></div>
+        <div class="sl"><label for="a-disp">Dispersal linking patches (km) <output id="o-disp"></output></label><input id="a-disp" type="range" min="0" max="50" step="5"></div>
+        <div class="sl"><label for="a-unav">Lost if cropland + built ≥ <output id="o-unav"></output></label><input id="a-unav" type="range" min="0.1" max="1" step="0.1"></div>
+        <label class="cb" for="a-excl"><input id="a-excl" type="checkbox"> Exclude cells where most GCMs extrapolate</label>
+      </div>
+    </aside>
+  </div>
+
+  <section class="block">
+    <div class="blockhead">
+      <div><h2>Outlook to 2100</h2><p class="note" id="outnote"></p></div>
+      <div class="chips" id="c-metric"></div>
+    </div>
+    <div class="serieslegend" id="serieslegend"></div>
+    <div class="chart" id="chart"></div>
+  </section>
+
+  <section class="block">
+    <div class="blockhead">
+      <div><h2>Where the model learned</h2><p class="note">Range-wide habitat index for the selected training set, and the observer-effort surface the model removes before projecting.</p></div>
+      <div class="chips" id="c-rw"></div>
+    </div>
+    <div class="rangegrid">
+      <canvas id="rw" aria-label="Range-wide map"></canvas>
+      <div style="display:grid; gap:12px">
+        <div class="legend" id="rwlegend"></div>
+        <p class="note" id="rwnote"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Model checks</h2>
+    <div class="checks">
+      <div><h3>Spatial block cross-validation</h3><div class="tbl" id="t-cv"></div><p class="note" style="margin-top:8px">Ensemble, 250 km blocks, 5 folds. Boyce near 1 means predictions rank held-out presences well.</p></div>
+      <div><h3>Oregon records (held out)</h3><div class="tbl" id="t-or"></div><p class="note" style="margin-top:8px">Habitat index at each Oregon iNaturalist record; obscured records use the mean over their 0.2° cell. Green ≥ suitable threshold.</p></div>
+      <div><h3>What drives the model</h3><div class="bars" id="t-imp"></div><p class="note" style="margin-top:8px">Permutation importance (share of AUC drop), selected training set.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <h3 style="color:var(--fg)">How this was built</h3>
+    <ul id="method"></ul>
+  </footer>
+</div>
+
+<script>
+const D = /*__DATA__*/null;
+const M = D.meta, Q = M.q8 || 250, NR = M.nrow, NC = M.ncol, N = NR * NC, W0 = M.window;
+const dec = s => Uint8Array.from(atob(s), ch => ch.charCodeAt(0));
+const OR = dec(D.oregon), HIST = dec(D.hist), UNAV = dec(D.unavail), AREA = D.rowArea;
+const SETS = Object.keys(D.sets), SSP_LAB = { ssp126: "SSP1-2.6", ssp245: "SSP2-4.5", ssp370: "SSP3-7.0", ssp585: "SSP5-8.5" };
+const PER_LAB = { baseline: "1970–2000", "2021-2040": "2021–40", "2041-2060": "2041–60", "2061-2080": "2061–80", "2081-2100": "2081–2100" };
+const LAYERS = { networks: "Habitat networks", index: "Habitat index", extrap: "Extrapolation", unavail: "Cropland + built" };
+const METRICS = { largest_network_K: "Largest network (foxes)", suitable_km2: "Suitable habitat (km²)", hist_range_km2: "Harney + Malheur (km²)", n_viable: "Networks ≥ MVP" };
+const DEF = { q: M.defaults.suitable_q, core: M.defaults.core_q, dens: M.defaults.density_km2, mvp: M.defaults.mvp_n,
+              disp: M.defaults.dispersal_km, unav: M.defaults.unavailable_frac, excl: !!M.defaults.exclude_extrapolation };
+const S = Object.assign({ set: SETS.includes("no_sjv") ? "no_sjv" : SETS[0], ssp: M.ssps[0], period: "baseline",
+                          layer: "networks", metric: "largest_network_K", rw: "index" }, DEF);
+const VL = v => (M.var_labels && M.var_labels[v]) || v;
+const fmt = (x, d = 0) => (x == null || isNaN(x)) ? "–" : Number(x).toLocaleString("en-US", { maximumFractionDigits: d, minimumFractionDigits: d });
+
+const cacheL = {};
+function layerKey(period, ssp) { return period === "baseline" ? "baseline" : ssp + "__" + period; }
+function getLayer(set, key) {
+  const id = set + "|" + key;
+  if (!cacheL[id]) { const L = D.sets[set].layers[key]; if (!L) return null; cacheL[id] = { idx: dec(L.idx), ext: dec(L.ext), n: L.n_gcm || 1 }; }
+  return cacheL[id];
+}
+function cellKm(r) { const lat = W0[3] - (r + 0.5) * M.res; return [M.res * 111.32 * Math.cos(lat * Math.PI / 180), M.res * 110.57]; }
+
+function viability(L, p) {
+  const suit = new Uint8Array(N), list = [];
+  let potential = 0, suitable = 0, core = 0, hist = 0;
+  for (let i = 0; i < N; i++) {
+    if (!OR[i]) continue;
+    const v = L.idx[i]; if (v === 255) continue;
+    const x = v / Q, extOK = !p.excl || (L.ext[i] !== 255 && L.ext[i] / Q < 0.5);
+    if (x < p.q - 1e-9 || !extOK) continue;
+    const a = AREA[(i / NC) | 0]; potential += a;
+    if (UNAV[i] === 255 || UNAV[i] / Q >= p.unav - 1e-9) continue;
+    suit[i] = 1; list.push(i); suitable += a;
+    if (x >= p.core - 1e-9) core += a;
+    if (HIST[i]) hist += a;
+  }
+  const parent = new Int32Array(N);
+  for (const i of list) parent[i] = i;
+  const find = i => { while (parent[i] !== i) { parent[i] = parent[parent[i]]; i = parent[i]; } return i; };
+  for (const i of list) {
+    const r = (i / NC) | 0, c = i % NC, [w, h] = cellKm(r);
+    const rx = Math.max(1, Math.ceil(p.disp / w)), ry = Math.max(1, Math.ceil(p.disp / h));
+    for (let dr = 0; dr <= ry; dr++) {
+      const rr = r + dr; if (rr >= NR) break;
+      for (let dc = -rx; dc <= rx; dc++) {
+        if (dr === 0 && dc <= 0) continue;
+        const cc = c + dc; if (cc < 0 || cc >= NC) continue;
+        const j = rr * NC + cc; if (!suit[j]) continue;
+        if (!(dr <= 1 && Math.abs(dc) <= 1)) { const dx = dc * w, dy = dr * h; if (dx * dx + dy * dy > p.disp * p.disp) continue; }
+        const a = find(i), b = find(j); if (a !== b) parent[a] = b;
+      }
+    }
+  }
+  const area = new Map();
+  for (const i of list) { const r = find(i); area.set(r, (area.get(r) || 0) + AREA[(i / NC) | 0]); }
+  const nets = new Map(); let largestK = 0, nViable = 0;
+  for (const [root, km2] of area) { const K = km2 * p.dens, viable = K >= p.mvp; nets.set(root, { km2, K, viable }); largestK = Math.max(largestK, K); if (viable) nViable++; }
+  return { suit, find, nets, m: { potential, suitable, core, hist, n_networks: nets.size, largestK, nViable } };
+}
+
+// ---------- colour ----------
+function isDark() {
+  const t = document.documentElement.getAttribute("data-theme");
+  return t === "dark" || (t !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+}
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const hex = h => { h = h.replace("#", ""); return [0, 2, 4].map(k => parseInt(h.slice(k, k + 2), 16)); };
+const RAMP_L = [[0, "#ebe7d6"], [0.1, "#d9d39f"], [0.3, "#9bc087"], [0.6, "#3c937e"], [1, "#1b4c69"]];
+const RAMP_D = [[0, "#252b26"], [0.1, "#4b5236"], [0.3, "#5e8a58"], [0.6, "#3ea38b"], [1, "#9ad8e6"]];
+function rampFn() {
+  const st = (isDark() ? RAMP_D : RAMP_L).map(([t, c]) => [t, hex(c)]);
+  return x => { for (let k = 1; k < st.length; k++) if (x <= st[k][0]) { const [t0, c0] = st[k - 1], [t1, c1] = st[k], f = (x - t0) / (t1 - t0); return c0.map((v, j) => v + f * (c1[j] - v)); } return st[st.length - 1][1]; };
+}
+function rampCss() { return "linear-gradient(90deg," + (isDark() ? RAMP_D : RAMP_L).map(([t, c]) => c + " " + t * 100 + "%").join(",") + ")"; }
+
+// ---------- map ----------
+const cv = document.getElementById("map"), ctx = cv.getContext("2d");
+const off = document.createElement("canvas"); off.width = NC; off.height = NR;
+const latMid = (W0[2] + W0[3]) / 2, ASPECT = (W0[3] - W0[2]) / ((W0[1] - W0[0]) * Math.cos(latMid * Math.PI / 180));
+let VIA = null, CUR = null;
+function sizeCanvas(c, aspect) {
+  const w = c.clientWidth || c.parentElement.clientWidth, dpr = window.devicePixelRatio || 1;
+  c.style.height = (w * aspect) + "px"; c.width = Math.round(w * dpr); c.height = Math.round(w * aspect * dpr);
+  return [c.width, c.height];
+}
+function drawLines(g, lines, win, Wd, Hd, color, width, dash) {
+  g.strokeStyle = color; g.lineWidth = width; g.setLineDash(dash || []);
+  for (const ln of lines) { g.beginPath(); ln.forEach(([x, y], k) => { const px = (x - win[0]) / (win[1] - win[0]) * Wd, py = (win[3] - y) / (win[3] - win[2]) * Hd; k ? g.lineTo(px, py) : g.moveTo(px, py); }); g.stroke(); }
+  g.setLineDash([]);
+}
+function drawMap() {
+  const [Wd, Hd] = sizeCanvas(cv, ASPECT), L = CUR, ramp = rampFn(), dpr = window.devicePixelRatio || 1;
+  const img = off.getContext("2d").createImageData(NC, NR), px = img.data;
+  const good = hex(css("--good")), warn = hex(css("--warn")), bad = hex(css("--bad")), base = hex(css("--map-bg"));
+  const brown = isDark() ? [214, 160, 96] : [138, 90, 43];
+  for (let i = 0; i < N; i++) {
+    const v = L.idx[i]; if (v === 255) continue;
+    const x = v / Q, inOR = OR[i] === 1; let c, a = 255;
+    if (S.layer === "index") { c = ramp(x); if (!inOR) a = 150; }
+    else if (S.layer === "networks") {
+      if (VIA.suit[i]) c = VIA.nets.get(VIA.find(i)).viable ? good : warn;
+      else { const g0 = ramp(x * 0.6); const gr = (g0[0] + g0[1] + g0[2]) / 3; c = [gr, gr, gr].map((q, j) => q * 0.5 + base[j] * 0.5); a = inOR ? 255 : 120; }
+    } else {
+      const share = S.layer === "extrap" ? (L.ext[i] === 255 ? 0 : L.ext[i] / Q) : (UNAV[i] === 255 ? 0 : UNAV[i] / Q);
+      const col = S.layer === "extrap" ? bad : brown, s = Math.min(1, share);
+      c = base.map((q, j) => q * (1 - s) + col[j] * s).map(q => q * 0.96); a = inOR ? 255 : 130;
+    }
+    px[i * 4] = c[0]; px[i * 4 + 1] = c[1]; px[i * 4 + 2] = c[2]; px[i * 4 + 3] = a;
+  }
+  off.getContext("2d").putImageData(img, 0, 0);
+  ctx.clearRect(0, 0, Wd, Hd); ctx.imageSmoothingEnabled = false; ctx.drawImage(off, 0, 0, Wd, Hd);
+  drawLines(ctx, D.lines.states, W0, Wd, Hd, css("--map-line"), 1 * dpr);
+  drawLines(ctx, D.lines.hist, W0, Wd, Hd, css("--accent"), 1.5 * dpr, [5 * dpr, 4 * dpr]);
+  drawLines(ctx, D.lines.oregon, W0, Wd, Hd, css("--map-border"), 2 * dpr);
+  const P = (x, y) => [(x - W0[0]) / (W0[1] - W0[0]) * Wd, (W0[3] - y) / (W0[3] - W0[2]) * Hd];
+  ctx.fillStyle = css("--muted");
+  for (const [x, y] of D.obs.train) { const [a, b] = P(x, y); ctx.beginPath(); ctx.arc(a, b, 2.2 * dpr, 0, 7); ctx.fill(); }
+  for (const o of D.obs.oregon) {
+    if (o.obscured) { const x0 = Math.floor(o.lon / 0.2) * 0.2, y0 = Math.floor(o.lat / 0.2) * 0.2, [a, b] = P(x0, y0 + 0.2), [c2, d2] = P(x0 + 0.2, y0);
+      ctx.strokeStyle = css("--bad"); ctx.lineWidth = 2 * dpr; ctx.strokeRect(a, b, c2 - a, d2 - b); }
+    else { const [a, b] = P(o.lon, o.lat); ctx.beginPath(); ctx.arc(a, b, 5 * dpr, 0, 7); ctx.fillStyle = css("--bad"); ctx.fill(); ctx.strokeStyle = css("--surface"); ctx.lineWidth = 2 * dpr; ctx.stroke(); }
+  }
+}
+cv.addEventListener("mousemove", ev => {
+  const r = cv.getBoundingClientRect(), fx = (ev.clientX - r.left) / r.width, fy = (ev.clientY - r.top) / r.height;
+  const lon = W0[0] + fx * (W0[1] - W0[0]), lat = W0[3] - fy * (W0[3] - W0[2]);
+  const c = Math.floor(fx * NC), rr = Math.floor(fy * NR), i = rr * NC + c, out = document.getElementById("readout");
+  if (c < 0 || c >= NC || rr < 0 || rr >= NR || CUR.idx[i] === 255) { out.textContent = "Hover the map for cell values"; return; }
+  let t = `${lat.toFixed(2)}°N ${Math.abs(lon).toFixed(2)}°W · index ${(CUR.idx[i] / Q).toFixed(2)} · cropland+built ${Math.round(UNAV[i] / Q * 100)}%`;
+  if (CUR.ext[i] !== 255 && CUR.ext[i] > 0) t += ` · extrapolating ${Math.round(CUR.ext[i] / Q * CUR.n)}/${CUR.n}`;
+  if (VIA.suit[i]) { const n = VIA.nets.get(VIA.find(i)); t += ` · network ${fmt(n.km2)} km², K≈${fmt(n.K)}`; }
+  out.textContent = t;
+});
+cv.addEventListener("mouseleave", () => { document.getElementById("readout").textContent = "Hover the map for cell values"; });
+
+function legend() {
+  const el = document.getElementById("legend");
+  const items = [];
+  if (S.layer === "networks") items.push(`<span><i class="sw" style="background:var(--good)"></i>Network ≥ MVP</span>`, `<span><i class="sw" style="background:var(--warn)"></i>Network below MVP</span>`);
+  else if (S.layer === "index") items.push(`<span class="rampwrap">0<i class="ramp" style="background:${rampCss()}"></i>1 habitat index</span>`);
+  else if (S.layer === "extrap") items.push(`<span class="rampwrap">0<i class="ramp" style="background:linear-gradient(90deg,var(--map-bg),var(--bad))"></i>${CUR.n > 1 ? "all GCMs" : "1"} extrapolating</span>`);
+  else items.push(`<span class="rampwrap">0%<i class="ramp" style="background:linear-gradient(90deg,var(--map-bg),${isDark() ? "#d6a060" : "#8a5a2b"})"></i>100% cropland + built</span>`);
+  items.push(`<span><i class="sw" style="background:var(--bad);border-radius:50%"></i>Oregon record</span>`, `<span><i class="sw" style="border:2px solid var(--bad);background:none"></i>Oregon record, obscured cell</span>`,
+             `<span><i class="sw" style="background:var(--muted);border-radius:50%;width:6px;height:6px"></i>Training record</span>`,
+             `<span><i class="sw" style="border-top:2px dashed var(--accent);border-radius:0;height:0;width:16px"></i>Harney + Malheur</span>`);
+  el.innerHTML = items.join("");
+}
+
+// ---------- side panel ----------
+function side() {
+  const m = VIA.m, ok = m.nViable > 0, v = document.getElementById("verdict");
+  v.className = "verdict " + (ok ? "ok" : "no");
+  v.innerHTML = `<span class="tag">${PER_LAB[S.period]}${S.period === "baseline" ? "" : " · " + SSP_LAB[S.ssp]}</span>
+    <span class="big">${ok ? "Enough connected habitat" : "Not enough connected habitat"}</span>
+    <span class="sub num">${ok ? `${m.nViable} network${m.nViable > 1 ? "s" : ""} could hold ${fmt(S.mvp)}+ foxes; the largest ≈ ${fmt(m.largestK)}.`
+                                 : `The largest connected network holds ≈ ${fmt(m.largestK)} foxes; a viable population needs ${fmt(S.mvp)}.`}</span>`;
+  document.getElementById("stats").innerHTML = [
+    ["Suitable habitat in Oregon", fmt(m.suitable) + " km²"], ["Core habitat (index ≥ " + S.core + ")", fmt(m.core) + " km²"],
+    ["Suitable in Harney + Malheur", fmt(m.hist) + " km²"], ["Lost to cropland / built", fmt(m.potential - m.suitable) + " km²"],
+    ["Habitat networks", fmt(m.n_networks)], ["Area needed for MVP", fmt(S.mvp / S.dens) + " km²"]
+  ].map(([a, b]) => `<dt>${a}</dt><dd>${b}</dd>`).join("");
+}
+
+// ---------- outlook chart ----------
+function series() {
+  const out = {};
+  for (const sp of M.ssps) {
+    out[sp] = [{ year: M.period_mid.baseline, m: viability(getLayer(S.set, "baseline"), S).m }];
+    for (const per of M.periods) { const L = getLayer(S.set, layerKey(per, sp)); if (L) out[sp].push({ year: M.period_mid[per], m: viability(L, S).m }); }
+  }
+  return out;
+}
+const MKEY = { largest_network_K: "largestK", suitable_km2: "suitable", hist_range_km2: "hist", n_viable: "nViable" };
+function atDefaults() { return ["q", "dens", "mvp", "disp", "unav", "excl"].every(k => S[k] === DEF[k]); }
+function chart() {
+  const ser = series(), key = MKEY[S.metric], showBands = atDefaults() && D.bands[S.set];
+  const Wv = 760, Hv = 300, ml = 64, mr = 16, mt = 14, mb = 34, iw = Wv - ml - mr, ih = Hv - mt - mb;
+  const years = [M.period_mid.baseline, ...M.periods.map(p => M.period_mid[p])];
+  let ymax = 0;
+  for (const sp in ser) for (const d of ser[sp]) ymax = Math.max(ymax, d.m[key]);
+  if (showBands) for (const sp of M.ssps) { const b = D.bands[S.set][sp]; if (b) for (const r of b[S.metric]) ymax = Math.max(ymax, r.hi); }
+  if (S.metric === "largest_network_K") ymax = Math.max(ymax, S.mvp);
+  ymax = ymax <= 0 ? 1 : ymax * 1.08;
+  const step = (() => { const raw = ymax / 4, p = Math.pow(10, Math.floor(Math.log10(raw))), f = raw / p; return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p; })();
+  ymax = Math.ceil(ymax / step) * step;
+  const X = y => ml + (y - years[0]) / (years[years.length - 1] - years[0]) * iw, Y = v => mt + ih - v / ymax * ih;
+  let s = `<svg viewBox="0 0 ${Wv} ${Hv}" role="img" aria-label="${METRICS[S.metric]} over time"><g class="grid">`;
+  for (let v = 0; v <= ymax + 1e-9; v += step) s += `<line x1="${ml}" x2="${Wv - mr}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${ml - 8}" y="${Y(v) + 4}" text-anchor="end">${fmt(v)}</text>`;
+  s += `</g>`;
+  years.forEach((y, k) => { s += `<text x="${X(y)}" y="${Hv - 10}" text-anchor="middle">${k === 0 ? "1970–2000" : PER_LAB[M.periods[k - 1]]}</text>`; });
+  if (S.metric === "largest_network_K") s += `<line x1="${ml}" x2="${Wv - mr}" y1="${Y(S.mvp)}" y2="${Y(S.mvp)}" stroke="var(--fg)" stroke-dasharray="5 4" stroke-width="1.2"/><text x="${Wv - mr}" y="${Y(S.mvp) - 6}" text-anchor="end" style="fill:var(--fg)">MVP ${fmt(S.mvp)}</text>`;
+  for (const sp of M.ssps) {
+    const col = `var(--s${sp.slice(3)})`;
+    if (showBands && D.bands[S.set][sp]) {
+      const b = D.bands[S.set][sp][S.metric], b0 = ser[sp][0].m[key];
+      const top = [[years[0], b0], ...b.map(r => [r.year, r.hi])], bot = [[years[0], b0], ...b.map(r => [r.year, r.lo])].reverse();
+      s += `<path d="M${top.map(([x, v]) => X(x) + "," + Y(v)).join("L")}L${bot.map(([x, v]) => X(x) + "," + Y(v)).join("L")}Z" fill="${col}" fill-opacity="0.14" stroke="none"/>`;
+    }
+    let pts = ser[sp].map(d => [X(d.year), Y(d.m[key]), { year: d.year, v: d.m[key] }]);
+    if (showBands && D.bands[S.set][sp]) { const b = D.bands[S.set][sp][S.metric];
+      pts = [pts[0], ...b.map(r => [X(r.year), Y(r.med), { year: r.year, v: r.med }])]; }
+    s += `<polyline points="${pts.map(p => p[0] + "," + p[1]).join(" ")}" fill="none" stroke="${col}" stroke-width="2.5"/>`;
+    for (const [x, y, d] of pts) s += `<circle cx="${x}" cy="${y}" r="4" fill="var(--surface)" stroke="${col}" stroke-width="2"><title>${SSP_LAB[sp]}, ${d.year}: ${fmt(d.v)}</title></circle>`;
+    const last = pts[pts.length - 1];
+    s += `<text x="${last[0] - 6}" y="${last[1] - 9}" text-anchor="end" style="fill:${col};font-weight:600">${fmt(last[2].v)}</text>`;
+  }
+  s += `</svg>`;
+  document.getElementById("chart").innerHTML = s;
+  document.getElementById("serieslegend").innerHTML = M.ssps.map(sp => `<span><i class="sw" style="background:var(--s${sp.slice(3)})"></i>${SSP_LAB[sp]}</span>`).join("") +
+    (showBands ? `<span><i class="sw" style="background:var(--muted);opacity:0.3"></i>Range across ${M.gcms.length} GCMs</span>` : "");
+  document.getElementById("outnote").textContent = (showBands
+      ? `Median (line) and range (band) across ${M.gcms.length} GCMs at the default assumptions. `
+      : `Lines show the ${M.gcms.length}-GCM mean climate under your assumptions; reset them to see the GCM median and range. `) +
+    "Soils, terrain and land cover stay at present values, so this is the climate signal alone.";
+}
+
+// ---------- range-wide ----------
+const rwc = document.getElementById("rw"), rctx = rwc.getContext("2d"), RW = D.rangewide;
+const roff = document.createElement("canvas"); roff.width = RW.ncol; roff.height = RW.nrow;
+const RWA = (RW.window[3] - RW.window[2]) / ((RW.window[1] - RW.window[0]) * Math.cos((RW.window[2] + RW.window[3]) / 2 * Math.PI / 180));
+const rwCache = {};
+function drawRW() {
+  const [Wd, Hd] = sizeCanvas(rwc, RWA), dpr = window.devicePixelRatio || 1;
+  const key = S.rw === "effort" ? "effort" : S.set;
+  if (!rwCache[key]) rwCache[key] = dec(S.rw === "effort" ? RW.effort : RW.sets[S.set]);
+  const v = rwCache[key], img = roff.getContext("2d").createImageData(RW.ncol, RW.nrow), px = img.data, ramp = rampFn();
+  const lo = hex(css("--s245")), hi = hex(css("--s585")), mid = hex(css("--map-bg"));
+  for (let i = 0; i < v.length; i++) {
+    if (v[i] === 255) continue; const x = v[i] / Q; let c;
+    if (S.rw === "effort") { const t = (x - 0.5) * 2; c = t < 0 ? mid.map((q, j) => q + (-t) * (lo[j] - q)) : mid.map((q, j) => q + t * (hi[j] - q)); }
+    else c = ramp(x);
+    px[i * 4] = c[0]; px[i * 4 + 1] = c[1]; px[i * 4 + 2] = c[2]; px[i * 4 + 3] = 255;
+  }
+  roff.getContext("2d").putImageData(img, 0, 0);
+  rctx.clearRect(0, 0, Wd, Hd); rctx.imageSmoothingEnabled = false; rctx.drawImage(roff, 0, 0, Wd, Hd);
+  drawLines(rctx, RW.lines, RW.window, Wd, Hd, css("--map-line"), 0.8 * dpr);
+  drawLines(rctx, D.lines.oregon, RW.window, Wd, Hd, css("--map-border"), 1.6 * dpr);
+  for (const [x, y, sjv] of RW.train) {
+    const a = (x - RW.window[0]) / (RW.window[1] - RW.window[0]) * Wd, b = (RW.window[3] - y) / (RW.window[3] - RW.window[2]) * Hd;
+    rctx.beginPath(); rctx.arc(a, b, 1.8 * dpr, 0, 7);
+    if (sjv && S.set === "no_sjv") { rctx.strokeStyle = css("--bad"); rctx.lineWidth = 1 * dpr; rctx.stroke(); }
+    else { rctx.fillStyle = css("--fg"); rctx.fill(); }
+  }
+  const lim = RW.effort_lim;
+  document.getElementById("rwlegend").innerHTML = S.rw === "effort"
+    ? `<span class="rampwrap">÷${Math.pow(10, lim)}<i class="ramp" style="background:linear-gradient(90deg,var(--s245),var(--map-bg),var(--s585))"></i>×${Math.pow(10, lim)}</span><span>records expected vs. reference effort</span>`
+    : `<span class="rampwrap">0<i class="ramp" style="background:${rampCss()}"></i>1 habitat index</span><span><i class="sw" style="background:var(--fg);border-radius:50%;width:6px;height:6px"></i>training record</span>` +
+      (S.set === "no_sjv" ? `<span><i class="sw" style="border:1.5px solid var(--bad);border-radius:50%;background:none;width:8px;height:8px"></i>excluded (San Joaquin)</span>` : "");
+  document.getElementById("rwnote").textContent = S.rw === "effort"
+    ? "Orange cells are where the fitted model expects more records than it would at median population density and travel time; blue cells, fewer. This effort term is fitted alongside the environment and then held constant, so it does not shape the habitat map."
+    : `Training set: ${D.sets[S.set].label}. ${fmt(M.n_presence_cells[S.set])} presence cells from ${fmt(M.n_records)} cleaned records outside Oregon; background drawn within 200 km of presences.`;
+}
+
+// ---------- tables ----------
+function tables() {
+  const lab = s => D.sets[s] ? D.sets[s].label : s;
+  document.getElementById("t-cv").innerHTML = `<table><tr><th>Training set</th><th>AUC</th><th>Boyce</th><th>≥ P10</th></tr>` +
+    D.cv.map(r => `<tr><td>${lab(r.set)}</td><td>${fmt(r.auc, 2)}</td><td>${fmt(r.boyce, 2)}</td><td>${fmt(r.p10 * 100)}%</td></tr>`).join("") + `</table>`;
+  const sets = SETS.filter(s => D.orcheck.length && s in D.orcheck[0]);
+  document.getElementById("t-or").innerHTML = `<table><tr><th>Date</th>${sets.map(s => `<th>${lab(s).replace("No effort correction", "No effort corr.")}</th>`).join("")}</tr>` +
+    D.orcheck.map(r => `<tr><td>${r.observed_on}${r.obscured ? "*" : ""}</td>${sets.map(s => `<td class="${r[s] >= S.q ? "hi" : ""}">${fmt(r[s], 2)}</td>`).join("")}</tr>`).join("") + `</table>`;
+  const im = (D.imp[S.set] || []).slice(0, 6), mx = Math.max(...im.map(r => r.share), 0.01);
+  document.getElementById("t-imp").innerHTML = im.map(r => `<div class="bar"><span class="lab">${VL(r.variable)}</span><i style="width:${r.share / mx * 100}%"></i><span class="pct">${fmt(r.share * 100)}%</span></div>`).join("");
+}
+
+// ---------- controls ----------
+function chips(id, opts, key, after) {
+  const el = document.getElementById(id);
+  el.innerHTML = Object.entries(opts).map(([v, l]) => `<button type="button" data-v="${v}">${l}</button>`).join("");
+  el.addEventListener("click", e => { const b = e.target.closest("button"); if (!b || b.disabled) return; S[key] = b.dataset.v; sync(); (after || update)(); });
+}
+function sync() {
+  for (const [id, key] of [["c-set", "set"], ["c-ssp", "ssp"], ["c-period", "period"], ["c-layer", "layer"], ["c-metric", "metric"], ["c-rw", "rw"]])
+    document.querySelectorAll(`#${id} button`).forEach(b => b.setAttribute("aria-pressed", b.dataset.v === S[key]));
+  document.querySelectorAll("#c-ssp button").forEach(b => b.disabled = S.period === "baseline");
+  const sl = { q: [2, ""], dens: [2, ""], mvp: [0, ""], disp: [0, ""], unav: [0, "%"] };
+  for (const k in sl) { const inp = document.getElementById("a-" + k); inp.value = S[k]; document.getElementById("o-" + k).textContent = k === "unav" ? Math.round(S[k] * 100) + "%" : fmt(S[k], sl[k][0]); }
+  document.getElementById("a-excl").checked = S.excl;
+}
+let raf = 0;
+function update() {
+  cancelAnimationFrame(raf);
+  raf = requestAnimationFrame(() => {
+    CUR = getLayer(S.set, layerKey(S.period, S.ssp)); VIA = viability(CUR, S);
+    document.getElementById("maptitle").textContent = `${LAYERS[S.layer]} · ${PER_LAB[S.period]}` + (S.period === "baseline" ? "" : ` · ${SSP_LAB[S.ssp]}, ${CUR.n}-GCM mean`);
+    drawMap(); legend(); side(); chart(); drawRW(); tables();
+  });
+}
+const setLabels = Object.fromEntries(SETS.map(s => [s, D.sets[s].label]));
+chips("c-set", setLabels, "set");
+chips("c-ssp", Object.fromEntries(M.ssps.map(s => [s, SSP_LAB[s]])), "ssp");
+chips("c-period", Object.fromEntries(["baseline", ...M.periods].map(p => [p, PER_LAB[p]])), "period");
+chips("c-layer", LAYERS, "layer");
+chips("c-metric", METRICS, "metric");
+chips("c-rw", { index: "Habitat index", effort: "Observer effort" }, "rw");
+for (const k of ["q", "dens", "mvp", "disp", "unav"])
+  document.getElementById("a-" + k).addEventListener("input", e => { S[k] = parseFloat(e.target.value); sync(); update(); });
+document.getElementById("a-excl").addEventListener("change", e => { S.excl = e.target.checked; update(); });
+document.getElementById("reset").addEventListener("click", () => { Object.assign(S, DEF); sync(); update(); });
+
+document.getElementById("lede").textContent =
+  `A habitat model trained on ${fmt(M.n_records)} cleaned iNaturalist records from outside Oregon, adjusted for where people make observations, ` +
+  `then projected onto Oregon for 1970–2000 and four CMIP6 periods to 2100. The question it answers: is there a connected block of habitat large enough to hold a viable population?`;
+document.getElementById("method").innerHTML = [
+  `Records: research-grade, wild iNaturalist kit fox observations; obscured coordinates and accuracy worse than 2 km dropped; one presence per 2.5′ cell. Oregon records are held out.`,
+  `Predictors (|r| &lt; 0.7): ${M.vars.map(VL).join("; ")}. Climate from WorldClim 2.1 (1970–2000) and CMIP6 (${M.gcms.join(", ")}); soils from SoilGrids (30–60 cm); land cover from ESA WorldCover; terrain ruggedness from 30″ elevation.`,
+  `Observer effort: log population density (GPWv4 2020) and log travel time to towns of 20,000+ are fitted, then held at their background medians when predicting.`,
+  `Models: GAM and lasso point-process models (infinitely weighted logistic regression), averaged. Habitat index = share of training presences predicted at or below a cell, so 0.10 is the P10 rule.`,
+  `Viability: suitable cells within the dispersal distance form a network; K = area × density; viable if K ≥ MVP. Defaults: 0.08 foxes/km² (Great Basin, Dugway UT: 0.04–0.12), MVP 100 (SE Oregon Ne/N ≈ 0.5, so Ne 50 ≈ N 100).`,
+  `Not modeled: coyotes, prey, cheatgrass, fire and future land conversion. Habitat across the Nevada and Idaho borders is mapped but not counted. Generated ${M.generated}.`
+].map(t => `<li>${t}</li>`).join("");
+
+sync(); update();
+addEventListener("resize", () => update());
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", update);
+new MutationObserver(update).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+</script>

@@ -1,0 +1,5 @@
+app/index.html
+raw/
+__pycache__/
+*.pyc
+.DS_Store

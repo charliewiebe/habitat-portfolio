@@ -1,0 +1,53 @@
+<h4>Question</h4>
+<p>Is there enough connected, suitable habitat in Oregon to sustain a reintroduced kit fox (<i>Vulpes macrotis</i>) population, and how does that change through 2100? The model is trained only on records outside Oregon and then projected into Oregon.</p>
+
+<h4>Occurrences</h4>
+<p>iNaturalist API v1: research-grade, wild records of <i>V. macrotis</i> and its subspecies. Obscured records are dropped by default because iNaturalist randomises their coordinates within a 0.2° cell, about five times coarser than the 2.5′ grid. This removes about 93% of San Joaquin Valley records, which are obscured because that subspecies is federally endangered. Records with a stated accuracy worse than 2 km are also dropped. The remaining records are reduced to one presence per grid cell. Oregon records are held out of training entirely and used only as an external check.</p>
+
+<h4>Environment</h4>
+<ul>
+<li>Climate: WorldClim 2.1 bioclim, 1970–2000 baseline.</li>
+<li>Den substrate: SoilGrids sand and clay at 30–60 cm.</li>
+<li>Terrain: ruggedness (TRI) computed from 30″ elevation and averaged to the grid.</li>
+<li>Land cover: ESA WorldCover 2020 fractions.</li>
+</ul>
+<p>Predictors are chosen greedily from an ecologically ordered list, keeping |r| &lt; 0.7 over the background.</p>
+
+<h4>Observer-effort adjustment</h4>
+<p>Records pile up where people are, so the models include two effort covariates:</p>
+<ul>
+<li>log population density (GPWv4, 2020)</li>
+<li>log travel time to the nearest settlement of 20,000 or more people</li>
+</ul>
+<p>These covariates are fitted jointly with the environment and then held at a constant reference value (the background median) when predicting. The projected surface is therefore conditional on equal observation effort everywhere (Warton, Renner &amp; Ramp 2013). Because the effort terms enter additively, the choice of reference value changes only the scale of the surface, not its ranking.</p>
+<p>Caveat: any genuine response of kit foxes to human density, such as the urban Bakersfield population, is absorbed into the effort term. That is acceptable for a rural reintroduction question. The "no effort correction" set and the effort-multiplier map show what the adjustment changes.</p>
+
+<h4>Models</h4>
+<p>Both models are presence–background point-process models fitted as infinitely weighted logistic regression, with background weight 100 and the background sampled in proportion to cell area within 200 km of presences.</p>
+<ul>
+<li>A GAM with shrinkage smooths (mgcv::bam).</li>
+<li>A lasso with linear, quadratic and hinge features (glmnet). The effort features are left unpenalised so they absorb effort rather than being shrunk away.</li>
+</ul>
+<p>Each model's prediction is converted to a <b>habitat index</b>: the (weighted) share of training presences whose predicted suitability is at or below the cell's. On this scale 0.10 is the P10 threshold and 0.50 means "as good as the median occupied site." The ensemble averages the two indices and re-references the result to presences.</p>
+
+<h4>Training sets</h4>
+<ul>
+<li><b>All records:</b> every training presence, equally weighted.</li>
+<li><b>Region-balanced:</b> presence weights proportional to n<sub>state</sub><sup>−0.5</sup>, so Mojave and Colorado Desert records do not dominate.</li>
+<li><b>Exclude San Joaquin:</b> removes presences and background within cismontane California, plus any record identified as <i>V. m. mutica</i>. The model then learns a desert niche rather than a Mediterranean-lowland one.</li>
+</ul>
+
+<h4>Evaluation</h4>
+<p>Spatial block cross-validation uses 250 km blocks dealt to five folds so presence counts stay balanced. Metrics are AUC, the continuous Boyce index, and the share of held-out presences at or above P10. Extrapolation is measured with MESS against each set's training environments. By default, cells where most GCMs extrapolate are excluded from habitat totals.</p>
+
+<h4>Change through time</h4>
+<p>Projections are made for the 1970–2000 baseline and for 2021–2040, 2041–2060, 2061–2080 and 2081–2100. They use CMIP6 downscaled bioclim from five GCMs (ACCESS-CM2, IPSL-CM6A-LR, MIROC6, MPI-ESM1-2-HR, UKESM1-0-LL) under SSP2-4.5 and SSP5-8.5. Metrics are computed for each GCM, and the time series shows the median and range across GCMs. Soils, terrain and land cover are held at present-day values, so the series isolates the climate signal. Cheatgrass invasion, fire, and future land conversion would make the outlook worse, not better.</p>
+
+<h4>Reintroduction viability</h4>
+<p>Habitat is counted in steps:</p>
+<ol>
+<li>Suitable: habitat index ≥ threshold, no extrapolation, and cropland plus built cover below the cutoff.</li>
+<li>Patches: suitable cells joined with 8-neighbour connectivity.</li>
+<li>Networks: patches within the dispersal distance of each other are merged.</li>
+</ol>
+<p>Each network's carrying capacity is K = suitable area × density. The default density is 0.08 foxes/km², the midpoint of the 0.04–0.12/km² range reported for the Great Basin at Dugway, Utah (Western North American Naturalist 67:389). A network is viable if K is at least the minimum viable population. The default of 100 comes from genetic work on SE Oregon foxes, which estimated N ≈ 28 with Ne ≈ 14.7 (Wildlife Society Bulletin, Dec 2018). That gives Ne/N ≈ 0.5, so reaching Ne ≥ 50 needs N ≈ 100. Every assumption is adjustable in the sidebar.</p>
