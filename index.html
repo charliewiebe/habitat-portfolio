@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Charlie Wiebe: Habitat and Spatial Ecology Portfolio</title>
-<meta name="description" content="Habitat, fisheries and spatial ecology projects by Charlie Wiebe: Oregon Groundfish Habitat and Kit Fox Oregon Outlook.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
@@ -721,7 +720,7 @@
     </div>
     <div class="text">
       <figure class="shot"><img src="assets/oregon-groundfish.jpg" alt="Oregon Groundfish Habitat: species and ocean-condition controls beside a two-panel map of the Oregon coast shaded by lingcod spawning potential, with closure outlines and a results panel" onerror="this.parentElement.remove()"></figure>
-      <p>This app maps where lingcod, canary rockfish and sablefish live off Oregon, and lets you change the conditions and rules that shape those populations. The habitat models are fitted to 4,002 Oregon tows with bottom-temperature records from NOAA's West Coast Groundfish Bottom Trawl Survey (2003–2024) and predicted onto the survey's own 2-km sampling grid. A spawning-potential model calibrated to the Pacific Fishery Management Council's most recent assessment for each species sits on top. Every control starts at 2026 Oregon rules and average bottom temperatures, so any change reads as a difference from the status quo. It's built to answer questions like:</p>
+      <p>This app maps where lingcod, canary rockfish and sablefish live off Oregon, and lets you change the conditions and rules that shape those populations. The habitat models are fitted to 4,002 Oregon tows with bottom-temperature records from NOAA's West Coast Groundfish Bottom Trawl Survey (2003–2024) and predicted onto the survey's own 2-km sampling grid. A spawning-potential model calibrated to the Pacific Fishery Management Council's most recent assessment for each species sits on top. Every control starts at 2026 Oregon rules and average bottom temperatures. The tool is meant to help answer questions like:</p>
       <ul class="questions">
         <li>If Oregon went back to a two-fish lingcod bag, how much spawning potential would that buy back?</li>
         <li>How much lingcod habitat sits inside the Stonewall Bank closure, and what changes if the expansion areas close too?</li>
@@ -729,8 +728,7 @@
         <li>If low-oxygen water covers the inner shelf, how much of each species' habitat is in the way?</li>
         <li>Would a 30–100 fathom closure protect the habitat that matters, or mostly push effort into open water?</li>
       </ul>
-      <p>Under the hood: for each species, one GAM models whether a tow catches the species and a second models how much it catches when it does. Both use depth, bottom temperature, a smooth spatial surface and a year effect, and both are checked by holding out whole stretches of coastline (latitude-block AUC 0.84–0.86). A separate temperature model fills in bottom temperature for every grid cell. The closures are digitized from the regulation text: the Yelloweye Rockfish Conservation Areas in 50 CFR 660.70 and Oregon's five marine reserves. Life history and stock status come from the assessments. The handful of inputs that aren't published (sport share of fishing mortality, encounters per trip, release mortality) are labelled in the app as assumptions and can be changed there.</p>
-      <p>The app is also clear about what the data can't say. The survey doesn't sample shallower than 55 m, so nearshore reef habitat is under-represented. Cold bottom water on the Oregon shelf is usually low-oxygen upwelled water, so the temperature effect is an association rather than a mechanism. Oxygen itself isn't in the data, which is why the hypoxia control is a scenario overlay, not a fitted effect.</p>
+      <p>On the backend: for each species, one GAM models whether a tow catches the species and a second models how much it catches when it does. Both use depth, bottom temperature, a smooth spatial surface and a year effect, and both are checked by holding out whole stretches of coastline (latitude-block AUC 0.84–0.86). A separate temperature model fills in bottom temperature for every grid cell. The closures are digitized from the regulation text: the Yelloweye Rockfish Conservation Areas in 50 CFR 660.70 and Oregon's five marine reserves. Life history and stock status come from the assessments. The handful of inputs that aren't published (sport share of fishing mortality, encounters per trip, release mortality) are labelled in the app as assumptions and can be changed there.</p>
     </div>
   </section>
 
@@ -745,15 +743,8 @@
     </div>
     <div class="text">
       <figure class="shot"><img src="assets/kit-fox.jpg" alt="Kit Fox Oregon Outlook: training-set, emissions, period and map-layer controls above a map of Oregon shaded by connected habitat networks, beside a verdict panel, habitat totals and the viability assumptions" onerror="this.parentElement.remove()"></figure>
-      <p>Kit foxes are listed as threatened under Oregon's Endangered Species Act, and they reach the northern edge of their range in the desert of Harney and Malheur counties. This project asks a reintroduction question: is there a connected block of habitat large enough to hold a viable population, now and as the climate changes? The habitat model is trained on cleaned, research-grade iNaturalist records from across the species' range outside Oregon. Oregon's own records are held out as an independent check. The model is then projected onto Oregon for 1970–2000 and four CMIP6 periods to 2100. It answers questions like:</p>
-      <ul class="questions">
-        <li>Is there a connected habitat network in southeastern Oregon big enough to support a minimum viable population?</li>
-        <li>How does that answer change by 2100 under moderate versus high emissions, and how much do the climate models disagree?</li>
-        <li>How much of the picture depends on correcting for where iNaturalist users actually go?</li>
-        <li>How sensitive is the verdict to fox density, dispersal distance, the suitability threshold and land already converted to cropland?</li>
-        <li>Where is the model extrapolating beyond the climates it learned from?</li>
-      </ul>
-      <p>Under the hood: GAM and lasso point-process models (infinitely weighted logistic regression) are averaged. Predictors are climate, soils (SoilGrids), land cover (ESA WorldCover) and terrain ruggedness. Population density and travel time to towns are fitted as an observer-effort term, then held constant when predicting. Spatial block cross-validation uses 250 km blocks. Suitable cells within dispersal distance join into networks; a network's carrying capacity is its area times a Great Basin density estimate, and it counts as viable once that capacity reaches the minimum viable population.</p>
+      <p>Kit foxes are listed as threatened under Oregon's Endangered Species Act, and they reach the northern edge of their range in the desert of Harney and Malheur counties. This project asks a reintroduction question: is there a connected block of habitat large enough to hold a viable population, now and as the climate changes? The habitat model is trained on cleaned, research-grade iNaturalist records from across the species' range outside Oregon. Oregon's own records are held out as an independent check. The model is then projected onto Oregon for 1970–2000 and four CMIP6 periods to 2100.</p>
+      <p>On the backend: GAM and lasso point-process models (infinitely weighted logistic regression) are averaged. Predictors are climate, soils (SoilGrids), land cover (ESA WorldCover) and terrain ruggedness. Population density and travel time to towns are fitted as an observer-effort term, then held constant when predicting. Spatial block cross-validation uses 250 km blocks. Suitable cells within dispersal distance join into networks; a network's carrying capacity is its area times a Great Basin density estimate, and it counts as viable once that capacity reaches the minimum viable population.</p>
     </div>
   </section>
 
